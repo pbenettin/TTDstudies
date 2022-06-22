@@ -44,11 +44,11 @@ The analyses can be run through the R Markdown script "data_analysis.Rmd".
 
 The ouputs include:
 
-- A [table with all the studies]()
+- A [table with all the studies](https://github.com/pbenettin/TTDstudies/blob/main/outputs/Table_studies.html)
 
-- A [table with all the study sites]()
+- A [table with all the study sites](https://github.com/pbenettin/TTDstudies/blob/main/outputs/Table_sites.html)
 
-- An [interactive map]() of the sites and studies
+- An [interactive map](https://github.com/pbenettin/TTDstudies/blob/main/outputs/Map.html) of the sites and studies
 
 
 ## How to contribute to this table
