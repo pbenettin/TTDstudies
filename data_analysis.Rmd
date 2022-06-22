@@ -1,0 +1,231 @@
+---
+title: "TTD studies analysis"
+output: 
+  html_document:
+    toc: true
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# LOAD PACKAGES AND PROCESS THE TABLES
+
+# load all packages 
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(glue)
+library(tibble)
+library(knitr)
+library(kableExtra)
+library(DT)
+library(ggplot2)
+library(ggmap)
+library(leaflet)
+library(htmlwidgets)
+library(htmltools)
+```
+
+This document explores the list of scientific papers included in the 'data' folder
+
+
+```{r message=FALSE, warning=FALSE}
+# load all the data 
+# the file "data_import.R" will import 3 tibbles:
+  # T with all the data on the studies and their sites
+  # Tdisplay, which is the same as T but with html entries that are good for html display
+  # Tsites
+source(file.path("data_import.R"))
+file_export <- TRUE #to export tables, maps and figures
+```
+
+## TABLES
+
+### The studies
+
+The table below lists the considered applications, published between `r min(Tdisplay$year)` and `r max(Tdisplay$year)`.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# display as a table using datatable
+pglngth <- 20
+#pglngth <- nrow(Tdisplay)
+T1 <- Tdisplay %>% 
+  arrange(desc(year)) %>% 
+  select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
+  datatable(escape = FALSE, 
+            options = list(pageLength = pglngth),
+            #options = list(pageLength = 10),
+            style = "bootstrap",
+            caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: center;',
+    'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
+T1
+
+if (file_export){
+  saveWidget(T1,file.path("outputs","Table_studies.html")) #save to a separate html file
+}
+
+
+```
+
+
+### The study sites
+
+The table below shows the main characteristics of the `r T %>% distinct(site, system) %>% count()` distinct sites where the studies were conducted.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# display as a table using datatable
+pglngth <- 20
+#pglngth <- nrow(Tsites)
+T2 <- Tsites %>% 
+  select(-climate_main,-climate_description) %>% 
+  datatable(escape = FALSE,
+            colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
+                         'longitude WGS84'='long_WGS84','climate code'='climate_code',
+                         'n'='n_studies'),
+            options = list(pageLength = 10, 
+                           autoWidth = TRUE,
+                           columnDefs = list(list(width = '200px', targets = c(9)),
+                                             list(width = '20px', targets = c(8)))),
+             caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: center;',
+    'Table S2: ', htmltools::em('List of the study sites.')))
+T2
+
+if (file_export){
+  saveWidget(T2,file.path("outputs","Table_sites.html")) #save to a separate html file
+}
+```
+
+## Map of the study sites
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE, fig.width=10, include = TRUE}
+# make the map
+maphtml <- Tdisplay %>% 
+  group_by(site) %>%
+  arrange(desc(year)) %>%
+  mutate(studies = str_c(unique(study), collapse = "<br>")) %>% #list of studies per site
+  ungroup() %>%
+  distinct(site, .keep_all = TRUE) %>%
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=~long_WGS84,
+             lat=~lat_WGS84,
+             label=~site,
+             popup=~studies) %>%
+  addControl("Hover on a pin to see the site name. <br>
+             Click on a pin to see the studies", position = "bottomleft")
+  
+
+# display the map
+maphtml
+if (file_export){
+  saveWidget(maphtml,file.path("outputs","Map.html")) #save to a separate html file
+}
+```
+
+
+## FIGURES
+
+### TTD approaches
+
+As important theoretical and experimental work consolidated between 2010 and 2015, the number of applications steadily grew in the following years.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+yrthresh <-  2006
+F1 <- Tdisplay %>%
+  filter(as.numeric(year) > yrthresh & as.numeric(year) < 2022) %>% 
+  distinct(study, .keep_all = TRUE) %>%
+  arrange(year) %>% 
+  ggplot(mapping = aes(x = as.numeric(year),
+                       fill = `TTD approach`
+                       ))+
+  geom_bar()+
+  labs(#title = "Publications 2006-2021, grouped by TTD approach",
+       #subtitle = " ",
+       #caption = "Figure S1",
+       x = "year",
+       y = "number") +
+  theme_classic() 
+F1
+
+if (file_export){
+  ggsave(file.path("outputs","SI_approaches.pdf")) #save to separate pdf file
+}
+```
+
+
+### Sites' size
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height = 3}
+# save info on largest and smallest catchment
+area_max <- Tsites %>% filter(system=="Catchment") %>% slice_max(size_km2)
+area_min <- Tsites %>% filter(system=="Catchment") %>% slice_min(size_km2)
+```
+
+The catchments' areas range between `r area_max$size_km2` km^2 (`r area_max$site`, `r area_max$country`) and `r area_min$size_km2` km^2 (`r area_min$site`, `r area_min$country`). The median catchment size is `r median(Tsites$size_km2,na.rm = TRUE)` km^2.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height = 3}
+# make the figure with the site sizes
+F2 <- Tsites %>%
+  filter(system=="Catchment") %>% 
+  select(site,size_km2) %>% 
+  distinct(site,size_km2) %>% 
+  mutate(tmp = 1) %>% 
+  mutate(randoffset = 0*size_km2+runif(sum(tmp), min = 0, max = 1)) %>% 
+  ggplot(mapping = aes(x = size_km2,
+                       y = "",
+                       label = site))+
+  geom_boxplot(color = "grey", alpha = .3)+
+  geom_jitter(color = "red", alpha = .8, height = 0.2, width = 0)+
+  #geom_point(color = "red", alpha = .8)+
+  scale_x_continuous(trans='log10',
+                     breaks = c(0.01, 0.1, 1, 10, 100),
+                     label = c(0.01, 0.1, 1, 10, 100))+
+  #ggrepel::geom_text_repel(size = 3, 
+  #                         force = 1,
+  #                         min.segment.length = 0) +
+  labs(#title = "Catchments' size",
+       #subtitle = " ",
+       #caption = "Figure S2",
+       x = "Size (km2)",
+       y = "") +
+  theme_classic()
+F2
+
+if (file_export){
+  ggsave(file.path("outputs","SI_sites_size.pdf"),width = 8, height = 3)  #save to separate pdf file
+}
+```
+
+
+### Climates of the study sites
+
+The large majority of the studies were carried out in temperate and continental/cold climates ('C' and 'D' main codes, respectively), mainly without a dry season. Tropical and dry climates ('A' and 'B') are almost absent from the list. This reflects the known bias of hydrologic research for experimental sites located at mid-latitudes in Europe and the United States.
+
+```{r echo=FALSE,  message=FALSE, warning=FALSE}
+  # show the climates
+F3 <- Tdisplay %>%
+  #filter(system==c("Catchment")) %>% 
+  filter(!is.na(climate_id)) %>% 
+  distinct(site, .keep_all = TRUE) %>%
+  mutate(climate_code_main = str_sub(climate_code,1,1),
+         climate_description = str_c(climate_code,climate_description, sep = ": ")) %>% 
+  ggplot(mapping = aes(x = climate_code_main,
+                       fill = climate_description))+
+  geom_bar(color = "white")+
+  #coord_flip() +
+  labs(#title = "Sites by Köppen-Geiger climate",
+       #subtitle = "Classification according to Beck et al. (2018)",
+       #caption = "Figure S3",
+       x = "class",
+       y = "count",
+       fill = "Climate codes") +
+  theme_classic() 
+F3
+
+if (file_export){
+  ggsave(file.path("outputs","SI_sites_climate.pdf")) #save to separate pdf file
+}
+```
+

@@ -1,0 +1,57 @@
+site,system,size_km2,country,lat_WGS84,long_WGS84
+Krycklan,Catchment,0.5,SE,64.23,19.76
+Bogus Creek,Catchment,0.6,US,43.7,-116.167
+Bruntland Burn,Catchment,3.2,UK,57.04334,-3.12268
+EPFL campus,Soil column,1.00E-06,CH,46.52139,6.567382
+Neuherberg,Soil column,1.00E-06,DE,48.222,11.595
+Hupsel Brook,Catchment,6.5,NL,52.064,6.629
+"Plynlimon, Upper Hafren",Catchment,1.2,UK,52.4905,-3.7304
+Hubbard Brook,Catchment,0.42,US,43.95858,-71.7208
+Kervidy-Naizin,Catchment,5,FR,48.0062,-2.83143
+Aabach–Mönchsaltorf,Catchment,46,CH,47.31,8.72
+Caño Seco,Catchment,30,CR,8.737,-82.946
+Girnock Burn,Catchment,30,UK,57.047,-3.115
+Howard River,Catchment,126,AU,-12.4625,131.0836
+HJ Andrews WS 10,Catchment,0.96,US,44.2169,-122.261
+San Lorencito river,Catchment,3.2,CR,10.22,-84.587
+Gårdsjön G1,Catchment,0.0063,SE,58.053,12.016
+Lake Stechlin,Soil profile,NA,DE,53.13333,13.03333
+Steglitz Urban Ecohydrological Observatory,Catchment,0.0078,DE,52.457232,13.315827
+"Plynlimon, Hafren",Catchment,3.5,UK,52.475,-3.705
+Allt Coire nan Con,Catchment,8,UK,56.758,-5.613
+Loch Ard Burn 11,Catchment,1.4,UK,56.15655,-4.464869
+Allt a'Mharcaidh,Catchment,9.6,UK,57.116,-3.848
+Kerbernez,Catchment,0.12,FR,47.9433,-4.12338
+Kerrien,Catchment,0.11,FR,47.9439,-4.12081
+Wuestebach,Catchment,0.39,DE,50.504,6.334
+"miniLEO, Landscape Evolution Observatory, Biosphere 2",Mini Hillslope,1.00E-06,US,32.57884,-110.85115
+"LEO hillslopes (East, West), Landscape Evolution Observatory, Biosphere 2",Hillslope,3.30E-04,US,32.57884,-110.85115
+Alteckendorf,Catchment,0.47,FR,48.788,7.59
+HJ Andrews WS 10,Hillslope,0.0017,US,44.2169,-122.261
+Plastic-1,Catchment,0.23,CA,45.183,-78.833
+Granger Basin,Catchment,7.8,CA,60.533,-135.183
+Weierbach,Catchment,0.42,LU,49.828,5.796
+Svartberget,Catchment,0.49,SW,64.23333,19.76667
+Bruntland Burn,Soil profile,NA,UK,57.04334,-3.12268
+Demnitzer Millcreek,Soil profile,NA,DE,52.3542,14.19262
+Demnitzer Millcreek,Catchment,66,DE,52.3542,14.19262
+Burn of Bennie,Catchment,7.9,UK,57.059,-2.467
+Hartheim,Soil profile,NA,DE,47.93,7.6
+Eichstetten,Soil profile,NA,DE,48.08,7.7
+Attert,Soil profile,NA,LU,49.771,5.97
+Marshall Gulch,Catchment,1.53,US,32.4,-110.767
+"Southern Sierra Critical Zone Observatory, P301",Catchment,1,US,37.055,-119.205
+"Plynlimon, Tanllwyth",Catchment,0.9,UK,52.474,-3.709
+Schäfertal,Catchment,1.44,DE,51.6545,11.04975
+Chenqi,Catchment,1.25,CN,26.264,105.772
+Lägeren,Soil profile,NA,CH,47.47833,8.36439
+Corin,Catchment,147,AU,-35.66,148.84
+Baldardo Burn,Catchment,2,UK,56.6586,-2.8227
+Loch Ard Burn 10,Catchment,0.9,UK,56.15641,-4.468901
+Springendalse Beek,Catchment,4,NL,52.43361,6.91418
+Kaiserstuhl,Soil profile,NA,DE,48.052,7.639
+Quebrada Grande,Catchment,3.9,CR,10.0941,-84.0617
+"Selke, Silberhütte",Catchment,100,DE,51.624,11.078
+"Selke, Meisdorf",Catchment,179,DE,51.7,11.285
+"Selke, Hausneindorf",Catchment,457,DE,51.84,11.262
+Dry Creek,Catchment,3.5,US,39.5754,-123.4642

@@ -1,0 +1,83 @@
+---
+title: "TTD studies in real-world catchments from post-2006 methods"
+output: 
+  github_document
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# LOAD PACKAGES AND PROCESS THE TABLES
+
+# load all packages 
+library(readr)
+library(stringr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(glue)
+library(tibble)
+library(knitr)
+library(kableExtra)
+#library(DT)
+#library(ggplot2)
+#library(leaflet)
+#library(htmltools)
+
+
+# load all the data 
+# the file "data_import.R" will import 3 tibbles:
+  # T with all the data on the studies and their sites
+  # Tdisplay, which is the same as T but with html entries that are good for html display
+  # Tsites
+source(file.path("data_import.R"))
+file_export <- TRUE #to export tables, maps and figures
+```
+
+This repository explores a list of scientific studies on water transit time distributions (TTD) in real-world systems. The list currently includes `r nrow(Tdisplay)` applications at `r T %>% distinct(site) %>% count()` distinct sites, published between `r min(Tdisplay$year)` and `r max(Tdisplay$year)`.
+
+A study is included if it is based on tracer data and if it makes use of post-2006 approaches to estimate TTDs or TTD metrics.
+
+
+## Display the data
+
+The analyses can be run through the R Markdown script "data_analysis.Rmd".
+
+The ouputs include:
+
+- A [table with all the studies]()
+
+- A [table with all the study sites]()
+
+- An [interactive map]() of the sites and studies
+
+
+## How to contribute to this table
+
+Please feel free to suggest additional studies that may have been left out by mistake. You can directly send a table entry formatted as in the tables `data/table_papers.csv` and `data/sites_location_classified.csv`. I will take care of adding the climate classification, if this is problematic.
+
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# display as a table
+# Tdisplay %>% 
+#   arrange(desc(year)) %>% 
+#   select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
+#   kbl(escape=FALSE) %>%
+#   kable_styling()
+```
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# display as a table
+# Tsites %>% 
+#   select(-climate_main,-climate_description) %>% 
+#   kbl(escape=FALSE) %>%
+#   kable_styling()
+```
+
+
+
+
