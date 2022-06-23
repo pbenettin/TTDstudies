@@ -20,7 +20,7 @@ The list can be displayed through:
     <a href="https://pbenettin.github.io/TTDstudies/html_tables/sites.html" target="_blank">interactive</a>)
 
   - A **map of the sites**
-    (<a href="https://pbenettin.github.io/TTDstudies/html_tables/sites.html" target="_blank">interactive</a>)
+    (<a href="https://pbenettin.github.io/TTDstudies/outputs/Map.html" target="_blank">interactive</a>)
 
 Some additional basic analyses can be run through the R Markdown script
 `data_analysis.Rmd` and the outputs are saved to the `outputs`
