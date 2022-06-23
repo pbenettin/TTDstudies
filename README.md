@@ -4013,7 +4013,7 @@ system
 
 <th style="text-align:right;">
 
-size\_km2
+size
 
 </th>
 
@@ -4025,25 +4025,25 @@ country
 
 <th style="text-align:right;">
 
-lat\_WGS84
+latitude
 
 </th>
 
 <th style="text-align:right;">
 
-long\_WGS84
+longitude
 
 </th>
 
 <th style="text-align:left;">
 
-climate\_code
+climate
 
 </th>
 
 <th style="text-align:right;">
 
-n\_studies
+n
 
 </th>
 

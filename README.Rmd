@@ -76,7 +76,8 @@ Tdisplay %>%
 # display as a table
 Tsites %>%
   select(-climate_main,-climate_description) %>%
-  kbl(escape=FALSE) %>%
+  kbl(col.names = c('site','system','size','country','latitude','longitude','climate','n','studies'),
+      escape=FALSE) %>%
   kable_styling()
 ```
 
