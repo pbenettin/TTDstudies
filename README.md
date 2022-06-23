@@ -13,14 +13,14 @@ The list can be displayed through:
 
   - A **table with all the studies**
     ([below](#table-with-all-the-studies) or
-    [interactive](https://pbenettin.github.io/TTDstudies/html_tables/studies.html))
+    <a href="https://pbenettin.github.io/TTDstudies/html_tables/studies.html" target="_blank">interactive</a>)
 
   - A **table with all the study sites**
     ([below](#table-with-the-study-sites) or
-    [interactive](https://pbenettin.github.io/TTDstudies/html_tables/sites.html))
+    <a href="https://pbenettin.github.io/TTDstudies/html_tables/sites.html" target="_blank">interactive</a>)
 
   - A **map of the sites**
-    ([interactive](https://pbenettin.github.io/TTDstudies/outputs/Map.html))
+    (<a href="https://pbenettin.github.io/TTDstudies/html_tables/sites.html" target="_blank">interactive</a>)
 
 Some additional basic analyses can be run through the R Markdown script
 `data_analysis.Rmd` and the outputs are saved to the `outputs`
