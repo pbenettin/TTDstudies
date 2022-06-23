@@ -22,7 +22,7 @@ mutate(climate_code = ifelse(site %in% c(
  ),NA,climate_code))
 
 
-# modify the table for improved html display
+# modify the table for improved display
 Tdisplay <- T %>%
   mutate(tracer = str_replace_all(tracer,"H-2",'<sup>2</sup>H')) %>% #improve display
   mutate(tracer = str_replace_all(tracer,"O-18",'<sup>18</sup>O')) %>% #improve display

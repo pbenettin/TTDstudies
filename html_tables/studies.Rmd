@@ -1,0 +1,60 @@
+---
+title: "Table with the TTD studies"
+output: 
+  html_document
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# LOAD PACKAGES AND PROCESS THE TABLES
+
+# load all packages 
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(glue)
+library(tibble)
+library(knitr)
+library(kableExtra)
+library(DT)
+library(ggplot2)
+library(ggmap)
+library(leaflet)
+library(htmlwidgets)
+library(htmltools)
+
+
+# load all the data 
+# the file "data_import.R" will import 3 tibbles:
+  # T with all the data on the studies and their sites
+  # Tdisplay, which is the same as T but with html entries that are good for html display
+  # Tsites
+setwd('..')
+source(file.path("data_import.R"))
+file_export <- FALSE #to export tables, maps and figures
+```
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# display as a table using datatable
+#pglngth <- 20
+pglngth <- nrow(Tdisplay)
+T1 <- Tdisplay %>% 
+  arrange(desc(year)) %>% 
+  select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
+  datatable(escape = FALSE, 
+            options = list(pageLength = pglngth),
+            style = "bootstrap",
+            caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: center;',
+    'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
+T1
+
+if (file_export){
+  saveWidget(T1,file.path("outputs","Table_studies.html")) #save to a separate html file
+}
+
+```

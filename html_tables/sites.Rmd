@@ -1,0 +1,63 @@
+---
+title: "Table with TTD study sites"
+output: 
+  html_document
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# LOAD PACKAGES AND PROCESS THE TABLES
+
+# load all packages 
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(glue)
+library(tibble)
+library(knitr)
+library(kableExtra)
+library(DT)
+library(ggplot2)
+library(ggmap)
+library(leaflet)
+library(htmlwidgets)
+library(htmltools)
+
+
+# load all the data 
+# the file "data_import.R" will import 3 tibbles:
+  # T with all the data on the studies and their sites
+  # Tdisplay, which is the same as T but with html entries that are good for html display
+  # Tsites
+setwd('..')
+source(file.path("data_import.R"))
+file_export <- FALSE #to export tables, maps and figures
+```
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# display as a table using datatable
+#pglngth <- 20
+pglngth <- nrow(Tsites)
+T2 <- Tsites %>% 
+  select(-climate_main,-climate_description) %>% 
+  datatable(escape = FALSE,
+            colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
+                         'longitude WGS84'='long_WGS84','climate code'='climate_code',
+                         'n'='n_studies'),
+            options = list(pageLength = pglngth, 
+                           autoWidth = TRUE,
+                           columnDefs = list(list(width = '200px', targets = c(9)),
+                                             list(width = '20px', targets = c(8)))),
+             caption = htmltools::tags$caption(
+    style = 'caption-side: bottom; text-align: center;',
+    'Table S2: ', htmltools::em('List of the study sites.')))
+T2
+
+if (file_export){
+  saveWidget(T2,file.path("outputs","Table_sites.html")) #save to a separate html file
+}
+```

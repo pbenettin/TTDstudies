@@ -47,23 +47,22 @@ The table below lists the considered applications, published between `r min(Tdis
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 # display as a table using datatable
-pglngth <- 20
+pglngth <- 10
 #pglngth <- nrow(Tdisplay)
 T1 <- Tdisplay %>% 
   arrange(desc(year)) %>% 
   select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
   datatable(escape = FALSE, 
             options = list(pageLength = pglngth),
-            #options = list(pageLength = 10),
             style = "bootstrap",
             caption = htmltools::tags$caption(
     style = 'caption-side: bottom; text-align: center;',
     'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
 T1
 
-if (file_export){
-  saveWidget(T1,file.path("outputs","Table_studies.html")) #save to a separate html file
-}
+# if (file_export){
+#   saveWidget(T1,file.path("outputs","Table_studies.html")) #save to a separate html file
+# }
 
 
 ```
@@ -75,7 +74,7 @@ The table below shows the main characteristics of the `r T %>% distinct(site, sy
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 # display as a table using datatable
-pglngth <- 20
+pglngth <- 10
 #pglngth <- nrow(Tsites)
 T2 <- Tsites %>% 
   select(-climate_main,-climate_description) %>% 
@@ -92,9 +91,9 @@ T2 <- Tsites %>%
     'Table S2: ', htmltools::em('List of the study sites.')))
 T2
 
-if (file_export){
-  saveWidget(T2,file.path("outputs","Table_sites.html")) #save to a separate html file
-}
+# if (file_export){
+#   saveWidget(T2,file.path("outputs","Table_sites.html")) #save to a separate html file
+# }
 ```
 
 ## Map of the study sites
@@ -120,7 +119,8 @@ maphtml <- Tdisplay %>%
 # display the map
 maphtml
 if (file_export){
-  saveWidget(maphtml,file.path("outputs","Map.html")) #save to a separate html file
+  saveWidget(maphtml,"Map.html") #save to a separate html file
+  file.rename("Map.html", file.path("outputs","Map.html"))
 }
 ```
 
