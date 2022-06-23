@@ -4013,7 +4013,7 @@ system
 
 <th style="text-align:right;">
 
-size
+size km2
 
 </th>
 
@@ -4038,12 +4038,6 @@ longitude
 <th style="text-align:left;">
 
 climate
-
-</th>
-
-<th style="text-align:right;">
-
-n
 
 </th>
 
@@ -4103,12 +4097,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1016/j.advwatres.2012.11.007" target="_blank">Bertuzzo
@@ -4159,12 +4147,6 @@ UK
 <td style="text-align:left;">
 
 Cfc
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -4221,12 +4203,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-17-533-2013" target="_blank">Hrachowitz
@@ -4277,12 +4253,6 @@ FR
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -4339,12 +4309,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/2015WR018077" target="_blank">Sprenger
@@ -4395,12 +4359,6 @@ UK
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -4457,12 +4415,6 @@ Dsa
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-21-5089-2017" target="_blank">Ala-aho
@@ -4513,12 +4465,6 @@ UK
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-8
 
 </td>
 
@@ -4588,12 +4534,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-2
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1016/j.advwatres.2020.103586" target="_blank">Smith
@@ -4646,12 +4586,6 @@ UK
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -4708,12 +4642,6 @@ Af
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.10941" target="_blank">Birkel and
@@ -4764,12 +4692,6 @@ CN
 <td style="text-align:left;">
 
 Cwa
-
-</td>
-
-<td style="text-align:right;">
-
-3
 
 </td>
 
@@ -4830,12 +4752,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.13880" target="_blank">Buzacott et
@@ -4886,12 +4802,6 @@ DE
 <td style="text-align:left;">
 
 Dfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -4948,12 +4858,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.13838" target="_blank">Smith et
@@ -5004,12 +4908,6 @@ US
 <td style="text-align:left;">
 
 Csb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -5066,12 +4964,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-19-2617-2015" target="_blank">Sprenger
@@ -5122,12 +5014,6 @@ CH
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-4
 
 </td>
 
@@ -5190,12 +5076,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-2
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
@@ -5248,12 +5128,6 @@ UK
 <td style="text-align:left;">
 
 Cfc
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -5310,12 +5184,6 @@ ET
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-23-2507-2019" target="_blank">Piovano
@@ -5369,12 +5237,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-19-2617-2015" target="_blank">Sprenger
@@ -5425,12 +5287,6 @@ US
 <td style="text-align:left;">
 
 Csb
-
-</td>
-
-<td style="text-align:right;">
-
-3
 
 </td>
 
@@ -5490,12 +5346,6 @@ Csb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1016/j.advwatres.2006.07.004" target="_blank">McGuire
@@ -5546,12 +5396,6 @@ AU
 <td style="text-align:left;">
 
 Aw
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -5608,12 +5452,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/2015WR017552" target="_blank">Benettin
@@ -5664,12 +5502,6 @@ NL
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-2
 
 </td>
 
@@ -5727,12 +5559,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1016/j.agee.2016.02.014" target="_blank">Sprenger
@@ -5783,12 +5609,6 @@ FR
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -5845,12 +5665,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.10546" target="_blank">Hrachowitz
@@ -5904,12 +5718,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.13781" target="_blank">Benettin et
@@ -5960,12 +5768,6 @@ SE
 <td style="text-align:left;">
 
 Dfc
-
-</td>
-
-<td style="text-align:right;">
-
-2
 
 </td>
 
@@ -6024,12 +5826,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1111/nph.15255" target="_blank">Brinkmann et
@@ -6080,12 +5876,6 @@ DE
 <td style="text-align:left;">
 
 Dfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -6143,12 +5933,6 @@ NA
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1029/2020WR028959" target="_blank">Kim et
@@ -6199,12 +5983,6 @@ UK
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -6261,12 +6039,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-17-533-2013" target="_blank">Hrachowitz
@@ -6320,12 +6092,6 @@ Csa
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
@@ -6376,12 +6142,6 @@ US
 <td style="text-align:left;">
 
 NA
-
-</td>
-
-<td style="text-align:right;">
-
-3
 
 </td>
 
@@ -6442,12 +6202,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1029/2019WR025539" target="_blank">Asadollahi
@@ -6501,12 +6255,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.13238" target="_blank">Piovano et
@@ -6557,12 +6305,6 @@ UK
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-4
 
 </td>
 
@@ -6625,12 +6367,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-2
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
@@ -6683,12 +6419,6 @@ UK
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-2
 
 </td>
 
@@ -6747,12 +6477,6 @@ Cfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1002/hyp.14508" target="_blank">Mayer-Anhalt
@@ -6803,12 +6527,6 @@ CR
 <td style="text-align:left;">
 
 Am
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -6865,12 +6583,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1029/2020WR029094" target="_blank">Yang et
@@ -6921,12 +6633,6 @@ DE
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -6983,12 +6689,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1029/2021WR030797" target="_blank">Nguyen et
@@ -7039,12 +6739,6 @@ DE
 <td style="text-align:left;">
 
 Dfb
-
-</td>
-
-<td style="text-align:right;">
-
-2
 
 </td>
 
@@ -7102,12 +6796,6 @@ Csb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.1029/2018wr023665" target="_blank">Visser et
@@ -7158,12 +6846,6 @@ NL
 <td style="text-align:left;">
 
 Cfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -7220,12 +6902,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-1
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-25-3635-2021" target="_blank">Gillefalk
@@ -7276,12 +6952,6 @@ SW
 <td style="text-align:left;">
 
 Dfc
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
@@ -7338,12 +7008,6 @@ Dfb
 
 </td>
 
-<td style="text-align:right;">
-
-2
-
-</td>
-
 <td style="text-align:left;">
 
 <a href="https://doi.org/10.5194/hess-25-401-2021" target="_blank">Rodriguez
@@ -7396,12 +7060,6 @@ DE
 <td style="text-align:left;">
 
 Dfb
-
-</td>
-
-<td style="text-align:right;">
-
-1
 
 </td>
 
