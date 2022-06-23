@@ -41,11 +41,11 @@ This repository explores a list of scientific studies on water transit time dist
 
 The list can be displayed through:
 
-- A [table with all the studies](#table-with-all-the-studies)
+- A **table with all the studies** ([below](#table-with-all-the-studies) or [interactive](https://pbenettin.github.io/TTDstudies/html_tables/studies.html))
 
-- A [table with all the study sites](#table-with-the-study-sites)
+- A **table with all the study sites** ([below](#table-with-the-study-sites) or [interactive](https://pbenettin.github.io/TTDstudies/html_tables/sites.html))
 
-- An [interactive map]() of the sites and studies
+- A **map of the sites** ([interactive](https://pbenettin.github.io/TTDstudies/outputs/Map.html))
 
 
 Some additional basic analyses can be run through the R Markdown script `data_analysis.Rmd` and the outputs are saved to the `outputs` directory.
