@@ -27,7 +27,9 @@ Tdisplay <- T %>%
   mutate(tracer = str_replace_all(tracer,"H-2",'<sup>2</sup>H')) %>% #improve display
   mutate(tracer = str_replace_all(tracer,"O-18",'<sup>18</sup>O')) %>% #improve display
   mutate(tracer = str_replace_all(tracer,"H-3",'<sup>3</sup>H')) %>% #improve display
-  mutate(tracer = str_replace_all(tracer,"NO3",'NO<sup>3</sup>')) %>% #improve display
+  mutate(tracer = str_replace_all(tracer,"Na-22",'<sup>22</sup>Na')) %>% #improve display
+  mutate(tracer = str_replace_all(tracer,"S-35",'<sup>35</sup>S')) %>% #improve display
+  mutate(tracer = str_replace_all(tracer,"NO3",'NO<sub>3</sub>')) %>% #improve display
   mutate(study = glue("<a href='{doi}' target='_blank'>{author_year}</a>")) %>%
   mutate(year = str_match(author_year,"\\d{4}")) %>%
   relocate(study, year) %>%
