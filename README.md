@@ -3,24 +3,25 @@ TTD studies in real-world catchments from post-2006 methods
 
 This repository explores a list of scientific studies on water transit
 time distributions (TTD) in real-world systems. The list currently
-includes 83 applications at 53 distinct sites, published between 2007
-and 2022. A study is included if it is based on tracer data and if it
-makes use of post-2006 approaches to estimate TTDs or TTD metrics.
+includes 84 applications to 54 distinct sites, from 71 papers published
+between 2007 and 2022. A study is included if it is based on tracer data
+and if it makes use of post-2006 approaches to estimate TTDs or TTD
+metrics.
 
 ## Display the data
 
 The list can be displayed through:
 
--   A **table with all the studies**
-    ([below](#table-with-all-the-studies) or
-    <a href="https://pbenettin.github.io/TTDstudies/html_tables/studies.html" target="_blank">interactive</a>)
+- A **table with all the studies** ([below](#table-with-all-the-studies)
+  or
+  <a href="https://pbenettin.github.io/TTDstudies/html_tables/studies.html" target="_blank">interactive</a>)
 
--   A **table with all the study sites**
-    ([below](#table-with-the-study-sites) or
-    <a href="https://pbenettin.github.io/TTDstudies/html_tables/sites.html" target="_blank">interactive</a>)
+- A **table with all the study sites**
+  ([below](#table-with-the-study-sites) or
+  <a href="https://pbenettin.github.io/TTDstudies/html_tables/sites.html" target="_blank">interactive</a>)
 
--   A **map of the sites**
-    (<a href="https://pbenettin.github.io/TTDstudies/outputs/Map.html" target="_blank">interactive</a>)
+- A **map of the sites**
+  (<a href="https://pbenettin.github.io/TTDstudies/outputs/Map.html" target="_blank">interactive</a>)
 
 Some additional basic analyses can be run through the R Markdown script
 `data_analysis.Rmd` and the outputs are saved to the `outputs`
@@ -31,8 +32,6 @@ directory.
 Please feel free to suggest additional studies that may have been left
 out by mistake. You can directly send a table entry formatted as in the
 tables `data/table_papers.csv` and `data/sites_location_classified.csv`.
-I will take care of adding the climate classification, if this is
-problematic.
 
 ## Table with all the studies
 
@@ -65,17 +64,17 @@ estimated age metric
 <tbody>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.14508" target="_blank">Mayer-Anhalt
+<a href="https://doi.org/10.1029/2021WR030698" target="_blank">Asadollahi
 et al. (2022)</a>
 </td>
 <td style="text-align:left;">
 2022
 </td>
 <td style="text-align:left;">
-Quebrada Grande
+EPFL campus
 </td>
 <td style="text-align:left;">
-Catchment
+Soil column
 </td>
 <td style="text-align:left;">
 <sup>18</sup>O, <sup>2</sup>H
@@ -84,7 +83,31 @@ Catchment
 multiple approaches
 </td>
 <td style="text-align:left;">
-marginal distribution, mean age
+full distribution, mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2021WR030950" target="_blank">Meira
+Neto et al. (2022)</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+miniLEO, Landscape Evolution Observatory, Biosphere 2
+</td>
+<td style="text-align:left;">
+Mini Hillslope
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O, <sup>2</sup>H, Cl
+</td>
+<td style="text-align:left;">
+multiple approaches
+</td>
+<td style="text-align:left;">
+full distribution
 </td>
 </tr>
 <tr>
@@ -114,26 +137,26 @@ full distribution
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1029/2021WR030950" target="_blank">Meira
-Neto et al. (2022)</a>
+<a href="https://doi.org/10.1002/hyp.14508" target="_blank">Mayer-Anhalt
+et al. (2022)</a>
 </td>
 <td style="text-align:left;">
 2022
 </td>
 <td style="text-align:left;">
-miniLEO, Landscape Evolution Observatory, Biosphere 2
+Quebrada Grande
 </td>
 <td style="text-align:left;">
-Mini Hillslope
+Catchment
 </td>
 <td style="text-align:left;">
-<sup>18</sup>O, <sup>2</sup>H, Cl
+<sup>18</sup>O, <sup>2</sup>H
 </td>
 <td style="text-align:left;">
 multiple approaches
 </td>
 <td style="text-align:left;">
-full distribution
+marginal distribution, mean age
 </td>
 </tr>
 <tr>
@@ -234,62 +257,14 @@ full distribution, median age, marginal age distribution
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1029/2021WR030698" target="_blank">Asadollahi
+<a href="https://doi.org/10.5194/hess-26-4093-2022" target="_blank">Sprenger
 et al. (2022)</a>
 </td>
 <td style="text-align:left;">
 2022
 </td>
 <td style="text-align:left;">
-EPFL campus
-</td>
-<td style="text-align:left;">
-Soil column
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O, <sup>2</sup>H
-</td>
-<td style="text-align:left;">
-multiple approaches
-</td>
-<td style="text-align:left;">
-full distribution, mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-25-3635-2021" target="_blank">Gillefalk
-et al. (2021)</a>
-</td>
-<td style="text-align:left;">
-2021
-</td>
-<td style="text-align:left;">
-Steglitz Urban Ecohydrological Observatory
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O, <sup>2</sup>H
-</td>
-<td style="text-align:left;">
-virtual flux tracking
-</td>
-<td style="text-align:left;">
-mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-25-4887-2021" target="_blank">Hrachowitz
-et al. (2021)</a>
-</td>
-<td style="text-align:left;">
-2021
-</td>
-<td style="text-align:left;">
-Wuestebach
+Can Vila
 </td>
 <td style="text-align:left;">
 Catchment
@@ -301,7 +276,7 @@ Catchment
 SAS
 </td>
 <td style="text-align:left;">
-full distribution, young water fraction
+full distribution, median age
 </td>
 </tr>
 <tr>
@@ -350,6 +325,78 @@ virtual flux tracking
 </td>
 <td style="text-align:left;">
 mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.14223" target="_blank">Lee
+Stevenson et al. (2021)</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+Bruntland Burn
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>2</sup>H
+</td>
+<td style="text-align:left;">
+virtual flux tracking
+</td>
+<td style="text-align:left;">
+marginal distribution, mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-25-3635-2021" target="_blank">Gillefalk
+et al. (2021)</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+Steglitz Urban Ecohydrological Observatory
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O, <sup>2</sup>H
+</td>
+<td style="text-align:left;">
+virtual flux tracking
+</td>
+<td style="text-align:left;">
+mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-25-4887-2021" target="_blank">Hrachowitz
+et al. (2021)</a>
+</td>
+<td style="text-align:left;">
+2021
+</td>
+<td style="text-align:left;">
+Wuestebach
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, young water fraction
 </td>
 </tr>
 <tr>
@@ -474,30 +521,6 @@ full distribution, marginal, water fractions
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.14223" target="_blank">Lee
-Stevenson et al. (2021)</a>
-</td>
-<td style="text-align:left;">
-2021
-</td>
-<td style="text-align:left;">
-Bruntland Burn
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>2</sup>H
-</td>
-<td style="text-align:left;">
-virtual flux tracking
-</td>
-<td style="text-align:left;">
-marginal distribution, mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 <a href="https://doi.org/10.1029/2020WR028490" target="_blank">Nguyen et
 al. (2021)</a>
 </td>
@@ -522,6 +545,30 @@ full distribution, median age
 </tr>
 <tr>
 <td style="text-align:left;">
+<a href="https://doi.org/10.1029/2020GL088897" target="_blank">Kuppel et
+al. (2020)</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+Bruntland Burn
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>2</sup>H, lc-excess
+</td>
+<td style="text-align:left;">
+virtual flux tracking
+</td>
+<td style="text-align:left;">
+mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 <a href="https://doi.org/10.1029/2019WR025539" target="_blank">Asadollahi
 et al. (2020)</a>
 </td>
@@ -542,6 +589,30 @@ multiple approaches
 </td>
 <td style="text-align:left;">
 full distribution, mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.13770" target="_blank">Rodriguez et
+al. (2020)</a>
+</td>
+<td style="text-align:left;">
+2020
+</td>
+<td style="text-align:left;">
+EPFL campus
+</td>
+<td style="text-align:left;">
+Soil column
+</td>
+<td style="text-align:left;">
+FBAs
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, marginal distribution
 </td>
 </tr>
 <tr>
@@ -642,54 +713,6 @@ mean age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1029/2020GL088897" target="_blank">Kuppel et
-al. (2020)</a>
-</td>
-<td style="text-align:left;">
-2020
-</td>
-<td style="text-align:left;">
-Bruntland Burn
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>2</sup>H, lc-excess
-</td>
-<td style="text-align:left;">
-virtual flux tracking
-</td>
-<td style="text-align:left;">
-mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.13770" target="_blank">Rodriguez et
-al. (2020)</a>
-</td>
-<td style="text-align:left;">
-2020
-</td>
-<td style="text-align:left;">
-EPFL campus
-</td>
-<td style="text-align:left;">
-Soil column
-</td>
-<td style="text-align:left;">
-FBAs
-</td>
-<td style="text-align:left;">
-SAS
-</td>
-<td style="text-align:left;">
-full distribution, marginal distribution
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 <a href="https://doi.org/10.1016/j.advwatres.2020.103586" target="_blank">Smith
 et al. (2020a)</a>
 </td>
@@ -786,6 +809,30 @@ full distribution, mean
 </tr>
 <tr>
 <td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
+et al. (2019)</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+Plynlimon, Upper Hafren
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O, <sup>2</sup>H, Cl
+</td>
+<td style="text-align:left;">
+Ensemble hydrograph separation
+</td>
+<td style="text-align:left;">
+New water Fraction, marginal age distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 <a href="https://doi.org/10.1002/hyp.13518" target="_blank">Cain et
 al. (2019)</a>
 </td>
@@ -830,6 +877,30 @@ virtual flux tracking
 </td>
 <td style="text-align:left;">
 mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
+et al. (2019)</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+Plynlimon, Hafren
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O, <sup>2</sup>H, Cl
+</td>
+<td style="text-align:left;">
+Ensemble hydrograph separation
+</td>
+<td style="text-align:left;">
+New water Fraction, marginal age distribution
 </td>
 </tr>
 <tr>
@@ -930,78 +1001,6 @@ full distribution, marginal distribution
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-23-51-2019" target="_blank">Zhang
-et al. (2019)</a>
-</td>
-<td style="text-align:left;">
-2019
-</td>
-<td style="text-align:left;">
-Chenqi
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>2</sup>H
-</td>
-<td style="text-align:left;">
-virtual flux tracking
-</td>
-<td style="text-align:left;">
-marginal distribution, mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
-et al. (2019)</a>
-</td>
-<td style="text-align:left;">
-2019
-</td>
-<td style="text-align:left;">
-Plynlimon, Upper Hafren
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O, <sup>2</sup>H, Cl
-</td>
-<td style="text-align:left;">
-Ensemble hydrograph separation
-</td>
-<td style="text-align:left;">
-New water Fraction, marginal age distribution
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
-et al. (2019)</a>
-</td>
-<td style="text-align:left;">
-2019
-</td>
-<td style="text-align:left;">
-Plynlimon, Hafren
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O, <sup>2</sup>H, Cl
-</td>
-<td style="text-align:left;">
-Ensemble hydrograph separation
-</td>
-<td style="text-align:left;">
-New water Fraction, marginal age distribution
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
 et al. (2019)</a>
 </td>
@@ -1022,6 +1021,30 @@ Ensemble hydrograph separation
 </td>
 <td style="text-align:left;">
 New water Fraction, marginal age distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-23-51-2019" target="_blank">Zhang
+et al. (2019)</a>
+</td>
+<td style="text-align:left;">
+2019
+</td>
+<td style="text-align:left;">
+Chenqi
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>2</sup>H
+</td>
+<td style="text-align:left;">
+virtual flux tracking
+</td>
+<td style="text-align:left;">
+marginal distribution, mean age
 </td>
 </tr>
 <tr>
@@ -1050,26 +1073,26 @@ mean age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.13238" target="_blank">Piovano et
-al. (2018)</a>
+<a href="https://doi.org/10.1029/2017wr021964" target="_blank">Rodriguez
+et al. (2018)</a>
 </td>
 <td style="text-align:left;">
 2018
 </td>
 <td style="text-align:left;">
-Plastic-1
+HJ Andrews WS 10
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:left;">
-<sup>2</sup>H
+<sup>18</sup>O
 </td>
 <td style="text-align:left;">
-virtual flux tracking
+well/partially-mixed compartments
 </td>
 <td style="text-align:left;">
-marginal distribution, mean age
+full distribution, mean, median, water fractions
 </td>
 </tr>
 <tr>
@@ -1098,26 +1121,26 @@ full distribution, young water fraction
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1029/2017wr021964" target="_blank">Rodriguez
-et al. (2018)</a>
+<a href="https://doi.org/10.1002/hyp.13238" target="_blank">Piovano et
+al. (2018)</a>
 </td>
 <td style="text-align:left;">
 2018
 </td>
 <td style="text-align:left;">
-HJ Andrews WS 10
+Plastic-1
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:left;">
-<sup>18</sup>O
+<sup>2</sup>H
 </td>
 <td style="text-align:left;">
-well/partially-mixed compartments
+virtual flux tracking
 </td>
 <td style="text-align:left;">
-full distribution, mean, median, water fractions
+marginal distribution, mean age
 </td>
 </tr>
 <tr>
@@ -1266,26 +1289,26 @@ full distribution, median age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-21-5243-2017" target="_blank">Lutz
-et al. (2017)</a>
+<a href="https://doi.org/10.1002/2017wr020894" target="_blank">Wilusz et
+al. (2017)</a>
 </td>
 <td style="text-align:left;">
 2017
 </td>
 <td style="text-align:left;">
-Alteckendorf
+Plynlimon, Hafren
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:left;">
-S-metolachlor, acetochlor
+Cl
 </td>
 <td style="text-align:left;">
 SAS
 </td>
 <td style="text-align:left;">
-full distribution (computed but not reported)
+full distribution
 </td>
 </tr>
 <tr>
@@ -1314,26 +1337,26 @@ full distribution
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/2017wr020894" target="_blank">Wilusz et
-al. (2017)</a>
+<a href="https://doi.org/10.5194/hess-21-5243-2017" target="_blank">Lutz
+et al. (2017)</a>
 </td>
 <td style="text-align:left;">
 2017
 </td>
 <td style="text-align:left;">
-Plynlimon, Hafren
+Alteckendorf
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:left;">
-Cl
+S-metolachlor, acetochlor
 </td>
 <td style="text-align:left;">
 SAS
 </td>
 <td style="text-align:left;">
-full distribution
+full distribution (computed but not reported)
 </td>
 </tr>
 <tr>
@@ -1358,6 +1381,30 @@ SAS
 </td>
 <td style="text-align:left;">
 full distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.10902" target="_blank">van
+Huijgevoort et al. (2016)</a>
+</td>
+<td style="text-align:left;">
+2016
+</td>
+<td style="text-align:left;">
+Bruntland Burn
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>2</sup>H
+</td>
+<td style="text-align:left;">
+virtual flux tracking
+</td>
+<td style="text-align:left;">
+full distribution, median age
 </td>
 </tr>
 <tr>
@@ -1410,30 +1457,6 @@ full distribution, median age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1016/j.agee.2016.02.014" target="_blank">Sprenger
-et al. (2016)</a>
-</td>
-<td style="text-align:left;">
-2016
-</td>
-<td style="text-align:left;">
-Kaiserstuhl
-</td>
-<td style="text-align:left;">
-Soil profile
-</td>
-<td style="text-align:left;">
-<sup>2</sup>H
-</td>
-<td style="text-align:left;">
-virtual flux tracking
-</td>
-<td style="text-align:left;">
-median age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 <a href="https://doi.org/10.1002/2015WR018077" target="_blank">Sprenger
 et al. (2016)</a>
 </td>
@@ -1458,11 +1481,35 @@ full distribution, median age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.10902" target="_blank">van
-Huijgevoort et al. (2016)</a>
+<a href="https://doi.org/10.1016/j.agee.2016.02.014" target="_blank">Sprenger
+et al. (2016)</a>
 </td>
 <td style="text-align:left;">
 2016
+</td>
+<td style="text-align:left;">
+Kaiserstuhl
+</td>
+<td style="text-align:left;">
+Soil profile
+</td>
+<td style="text-align:left;">
+<sup>2</sup>H
+</td>
+<td style="text-align:left;">
+virtual flux tracking
+</td>
+<td style="text-align:left;">
+median age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/2015WR017888" target="_blank">Soulsby
+et al. (2015b)</a>
+</td>
+<td style="text-align:left;">
+2015
 </td>
 <td style="text-align:left;">
 Bruntland Burn
@@ -1477,7 +1524,31 @@ Catchment
 virtual flux tracking
 </td>
 <td style="text-align:left;">
-full distribution, median age
+mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/2014WR016508" target="_blank">Queloz et
+al. (2015)</a>
+</td>
+<td style="text-align:left;">
+2015
+</td>
+<td style="text-align:left;">
+EPFL campus
+</td>
+<td style="text-align:left;">
+Soil column
+</td>
+<td style="text-align:left;">
+FBAs
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, mean age
 </td>
 </tr>
 <tr>
@@ -1554,6 +1625,54 @@ mean age
 </tr>
 <tr>
 <td style="text-align:left;">
+<a href="https://doi.org/10.1002/2014WR016247" target="_blank">Klaus et
+al. (2015)</a>
+</td>
+<td style="text-align:left;">
+2015
+</td>
+<td style="text-align:left;">
+HJ Andrews WS 10
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+particle tracking
+</td>
+<td style="text-align:left;">
+mean age, snapshots of age distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
+Velde et al. (2015)</a>
+</td>
+<td style="text-align:left;">
+2015
+</td>
+<td style="text-align:left;">
+Gårdsjön G1
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 <a href="https://doi.org/10.1002/2014WR015707" target="_blank">Harman
 (2015)</a>
 </td>
@@ -1626,54 +1745,6 @@ full distribution, marginal distribution, median age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/2014WR016247" target="_blank">Klaus et
-al. (2015)</a>
-</td>
-<td style="text-align:left;">
-2015
-</td>
-<td style="text-align:left;">
-HJ Andrews WS 10
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O
-</td>
-<td style="text-align:left;">
-particle tracking
-</td>
-<td style="text-align:left;">
-mean age, snapshots of age distribution
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1002/2014WR016508" target="_blank">Queloz et
-al. (2015)</a>
-</td>
-<td style="text-align:left;">
-2015
-</td>
-<td style="text-align:left;">
-EPFL campus
-</td>
-<td style="text-align:left;">
-Soil column
-</td>
-<td style="text-align:left;">
-FBAs
-</td>
-<td style="text-align:left;">
-SAS
-</td>
-<td style="text-align:left;">
-full distribution, mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 <a href="https://doi.org/10.1002/hyp.10500" target="_blank">Soulsby et
 al. (2015a)</a>
 </td>
@@ -1694,30 +1765,6 @@ virtual flux tracking
 </td>
 <td style="text-align:left;">
 marginal distribution, mean age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1002/2015WR017888" target="_blank">Soulsby
-et al. (2015b)</a>
-</td>
-<td style="text-align:left;">
-2015
-</td>
-<td style="text-align:left;">
-Bruntland Burn
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>2</sup>H
-</td>
-<td style="text-align:left;">
-virtual flux tracking
-</td>
-<td style="text-align:left;">
-mean age
 </td>
 </tr>
 <tr>
@@ -1766,30 +1813,6 @@ virtual flux tracking
 </td>
 <td style="text-align:left;">
 median age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
-Velde et al. (2015)</a>
-</td>
-<td style="text-align:left;">
-2015
-</td>
-<td style="text-align:left;">
-Gårdsjön G1
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O
-</td>
-<td style="text-align:left;">
-SAS
-</td>
-<td style="text-align:left;">
-full distribution
 </td>
 </tr>
 <tr>
@@ -2099,7 +2122,7 @@ Aabach–Mönchsaltorf
 Catchment
 </td>
 <td style="text-align:right;">
-4.60e+01
+46
 </td>
 <td style="text-align:left;">
 CH
@@ -2126,7 +2149,7 @@ Allt a’Mharcaidh
 Catchment
 </td>
 <td style="text-align:right;">
-9.60e+00
+9.6
 </td>
 <td style="text-align:left;">
 UK
@@ -2138,7 +2161,7 @@ UK
 -3.848000
 </td>
 <td style="text-align:left;">
-Cfc
+Cfb
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-17-533-2013" target="_blank">Hrachowitz
@@ -2153,7 +2176,7 @@ Allt Coire nan Con
 Catchment
 </td>
 <td style="text-align:right;">
-8.00e+00
+8
 </td>
 <td style="text-align:left;">
 UK
@@ -2180,7 +2203,7 @@ Alteckendorf
 Catchment
 </td>
 <td style="text-align:right;">
-4.70e-01
+470 m
 </td>
 <td style="text-align:left;">
 FR
@@ -2234,7 +2257,7 @@ Baldardo Burn
 Catchment
 </td>
 <td style="text-align:right;">
-2.00e+00
+2
 </td>
 <td style="text-align:left;">
 UK
@@ -2261,7 +2284,7 @@ Bogus Creek
 Catchment
 </td>
 <td style="text-align:right;">
-6.00e-01
+600 m
 </td>
 <td style="text-align:left;">
 US
@@ -2273,7 +2296,7 @@ US
 -116.167000
 </td>
 <td style="text-align:left;">
-Dsa
+BSk
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-21-5089-2017" target="_blank">Ala-aho
@@ -2288,7 +2311,7 @@ Bruntland Burn
 Catchment
 </td>
 <td style="text-align:right;">
-3.20e+00
+3.2
 </td>
 <td style="text-align:left;">
 UK
@@ -2300,7 +2323,7 @@ UK
 -3.122680
 </td>
 <td style="text-align:left;">
-Cfb
+Cfc
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-2021-158" target="_blank">Neill et
@@ -2340,7 +2363,7 @@ UK
 -3.122680
 </td>
 <td style="text-align:left;">
-Cfb
+Cfc
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.1016/j.advwatres.2020.103586" target="_blank">Smith
@@ -2357,7 +2380,7 @@ Burn of Bennie
 Catchment
 </td>
 <td style="text-align:right;">
-7.90e+00
+7.9
 </td>
 <td style="text-align:left;">
 UK
@@ -2378,13 +2401,40 @@ al. (2015a)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
+Can Vila
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+560 m
+</td>
+<td style="text-align:left;">
+ES
+</td>
+<td style="text-align:right;">
+42.19270
+</td>
+<td style="text-align:right;">
+1.820350
+</td>
+<td style="text-align:left;">
+Cfb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-26-4093-2022" target="_blank">Sprenger
+et al. (2022)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Caño Seco
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-3.00e+01
+30
 </td>
 <td style="text-align:left;">
 CR
@@ -2411,7 +2461,7 @@ Chenqi
 Catchment
 </td>
 <td style="text-align:right;">
-1.25e+00
+1.25
 </td>
 <td style="text-align:left;">
 CN
@@ -2442,7 +2492,7 @@ Corin
 Catchment
 </td>
 <td style="text-align:right;">
-1.47e+02
+147
 </td>
 <td style="text-align:left;">
 AU
@@ -2469,7 +2519,7 @@ Demnitzer Millcreek
 Catchment
 </td>
 <td style="text-align:right;">
-6.60e+01
+66
 </td>
 <td style="text-align:left;">
 DE
@@ -2523,7 +2573,7 @@ Dry Creek
 Catchment
 </td>
 <td style="text-align:right;">
-3.50e+00
+3.5
 </td>
 <td style="text-align:left;">
 US
@@ -2577,7 +2627,7 @@ EPFL campus
 Soil column
 </td>
 <td style="text-align:right;">
-1.00e-06
+1 µ
 </td>
 <td style="text-align:left;">
 CH
@@ -2610,7 +2660,7 @@ Gårdsjön G1
 Catchment
 </td>
 <td style="text-align:right;">
-6.30e-03
+6.3 m
 </td>
 <td style="text-align:left;">
 SE
@@ -2639,7 +2689,7 @@ Girnock Burn
 Catchment
 </td>
 <td style="text-align:right;">
-3.00e+01
+30
 </td>
 <td style="text-align:left;">
 UK
@@ -2666,7 +2716,7 @@ Granger Basin
 Catchment
 </td>
 <td style="text-align:right;">
-7.80e+00
+7.8
 </td>
 <td style="text-align:left;">
 CA
@@ -2720,7 +2770,7 @@ HJ Andrews WS 10
 Catchment
 </td>
 <td style="text-align:right;">
-9.60e-01
+960 m
 </td>
 <td style="text-align:left;">
 US
@@ -2750,7 +2800,7 @@ HJ Andrews WS 10
 Hillslope
 </td>
 <td style="text-align:right;">
-1.70e-03
+1.7 m
 </td>
 <td style="text-align:left;">
 US
@@ -2777,7 +2827,7 @@ Howard River
 Catchment
 </td>
 <td style="text-align:right;">
-1.26e+02
+126
 </td>
 <td style="text-align:left;">
 AU
@@ -2804,7 +2854,7 @@ Hubbard Brook
 Catchment
 </td>
 <td style="text-align:right;">
-4.20e-01
+420 m
 </td>
 <td style="text-align:left;">
 US
@@ -2831,7 +2881,7 @@ Hupsel Brook
 Catchment
 </td>
 <td style="text-align:right;">
-6.50e+00
+6.5
 </td>
 <td style="text-align:left;">
 NL
@@ -2886,7 +2936,7 @@ Kerbernez
 Catchment
 </td>
 <td style="text-align:right;">
-1.20e-01
+120 m
 </td>
 <td style="text-align:left;">
 FR
@@ -2913,7 +2963,7 @@ Kerrien
 Catchment
 </td>
 <td style="text-align:right;">
-1.10e-01
+110 m
 </td>
 <td style="text-align:left;">
 FR
@@ -2940,7 +2990,7 @@ Kervidy-Naizin
 Catchment
 </td>
 <td style="text-align:right;">
-5.00e+00
+5
 </td>
 <td style="text-align:left;">
 FR
@@ -2967,7 +3017,7 @@ Krycklan
 Catchment
 </td>
 <td style="text-align:right;">
-5.00e-01
+500 m
 </td>
 <td style="text-align:left;">
 SE
@@ -3051,7 +3101,7 @@ LEO hillslopes (East, West), Landscape Evolution Observatory, Biosphere
 Hillslope
 </td>
 <td style="text-align:right;">
-3.30e-04
+330 µ
 </td>
 <td style="text-align:left;">
 US
@@ -3078,7 +3128,7 @@ Loch Ard Burn 10
 Catchment
 </td>
 <td style="text-align:right;">
-9.00e-01
+900 m
 </td>
 <td style="text-align:left;">
 UK
@@ -3105,7 +3155,7 @@ Loch Ard Burn 11
 Catchment
 </td>
 <td style="text-align:right;">
-1.40e+00
+1.4
 </td>
 <td style="text-align:left;">
 UK
@@ -3132,7 +3182,7 @@ Marshall Gulch
 Catchment
 </td>
 <td style="text-align:right;">
-1.53e+00
+1.53
 </td>
 <td style="text-align:left;">
 US
@@ -3144,7 +3194,7 @@ US
 -110.767000
 </td>
 <td style="text-align:left;">
-Csa
+BSk
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
@@ -3159,7 +3209,7 @@ miniLEO, Landscape Evolution Observatory, Biosphere 2
 Mini Hillslope
 </td>
 <td style="text-align:right;">
-1.00e-06
+1 µ
 </td>
 <td style="text-align:left;">
 US
@@ -3190,7 +3240,7 @@ Neuherberg
 Soil column
 </td>
 <td style="text-align:right;">
-1.00e-06
+1 µ
 </td>
 <td style="text-align:left;">
 DE
@@ -3217,7 +3267,7 @@ Plastic-1
 Catchment
 </td>
 <td style="text-align:right;">
-2.30e-01
+230 m
 </td>
 <td style="text-align:left;">
 CA
@@ -3244,7 +3294,7 @@ Plynlimon, Hafren
 Catchment
 </td>
 <td style="text-align:right;">
-3.50e+00
+3.5
 </td>
 <td style="text-align:left;">
 UK
@@ -3277,7 +3327,7 @@ Plynlimon, Tanllwyth
 Catchment
 </td>
 <td style="text-align:right;">
-9.00e-01
+900 m
 </td>
 <td style="text-align:left;">
 UK
@@ -3306,7 +3356,7 @@ Plynlimon, Upper Hafren
 Catchment
 </td>
 <td style="text-align:right;">
-1.20e+00
+1.2
 </td>
 <td style="text-align:left;">
 UK
@@ -3335,7 +3385,7 @@ Quebrada Grande
 Catchment
 </td>
 <td style="text-align:right;">
-3.90e+00
+3.9
 </td>
 <td style="text-align:left;">
 CR
@@ -3362,7 +3412,7 @@ San Lorencito river
 Catchment
 </td>
 <td style="text-align:right;">
-3.20e+00
+3.2
 </td>
 <td style="text-align:left;">
 CR
@@ -3389,7 +3439,7 @@ Schäfertal
 Catchment
 </td>
 <td style="text-align:right;">
-1.44e+00
+1.44
 </td>
 <td style="text-align:left;">
 DE
@@ -3416,7 +3466,7 @@ Selke, Hausneindorf
 Catchment
 </td>
 <td style="text-align:right;">
-4.57e+02
+457
 </td>
 <td style="text-align:left;">
 DE
@@ -3428,7 +3478,7 @@ DE
 11.262000
 </td>
 <td style="text-align:left;">
-Cfb
+Dfb
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.1029/2021WR030797" target="_blank">Nguyen et
@@ -3443,7 +3493,7 @@ Selke, Meisdorf
 Catchment
 </td>
 <td style="text-align:right;">
-1.79e+02
+179
 </td>
 <td style="text-align:left;">
 DE
@@ -3470,7 +3520,7 @@ Selke, Silberhütte
 Catchment
 </td>
 <td style="text-align:right;">
-1.00e+02
+100
 </td>
 <td style="text-align:left;">
 DE
@@ -3498,7 +3548,7 @@ Southern Sierra Critical Zone Observatory, P301
 Catchment
 </td>
 <td style="text-align:right;">
-1.00e+00
+1
 </td>
 <td style="text-align:left;">
 US
@@ -3525,7 +3575,7 @@ Springendalse Beek
 Catchment
 </td>
 <td style="text-align:right;">
-4.00e+00
+4
 </td>
 <td style="text-align:left;">
 NL
@@ -3552,7 +3602,7 @@ Steglitz Urban Ecohydrological Observatory
 Catchment
 </td>
 <td style="text-align:right;">
-7.80e-03
+7.8 m
 </td>
 <td style="text-align:left;">
 DE
@@ -3579,7 +3629,7 @@ Svartberget
 Catchment
 </td>
 <td style="text-align:right;">
-4.90e-01
+490 m
 </td>
 <td style="text-align:left;">
 SW
@@ -3606,7 +3656,7 @@ Weierbach
 Catchment
 </td>
 <td style="text-align:right;">
-4.20e-01
+420 m
 </td>
 <td style="text-align:left;">
 LU
@@ -3618,7 +3668,7 @@ LU
 5.796000
 </td>
 <td style="text-align:left;">
-Dfb
+Cfb
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-25-401-2021" target="_blank">Rodriguez
@@ -3635,7 +3685,7 @@ Wuestebach
 Catchment
 </td>
 <td style="text-align:right;">
-3.90e-01
+390 m
 </td>
 <td style="text-align:left;">
 DE

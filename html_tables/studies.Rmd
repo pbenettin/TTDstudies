@@ -44,7 +44,7 @@ file_export <- FALSE #to export tables, maps and figures
 pglngth <- nrow(Tdisplay)
 T1 <- Tdisplay %>% 
   arrange(desc(year)) %>% 
-  select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
+  dplyr::select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
   datatable(escape = FALSE, 
             options = list(pageLength = pglngth),
             style = "bootstrap",

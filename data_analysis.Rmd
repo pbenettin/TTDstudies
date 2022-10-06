@@ -51,19 +51,14 @@ pglngth <- 10
 #pglngth <- nrow(Tdisplay)
 T1 <- Tdisplay %>% 
   arrange(desc(year)) %>% 
-  select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
+  dplyr::select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
   datatable(escape = FALSE, 
             options = list(pageLength = pglngth),
             style = "bootstrap",
             caption = htmltools::tags$caption(
     style = 'caption-side: bottom; text-align: center;',
     'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
-T1
-
-# if (file_export){
-#   saveWidget(T1,file.path("outputs","Table_studies.html")) #save to a separate html file
-# }
-
+#T1
 
 ```
 
@@ -77,7 +72,7 @@ The table below shows the main characteristics of the `r T %>% distinct(site, sy
 pglngth <- 10
 #pglngth <- nrow(Tsites)
 T2 <- Tsites %>% 
-  select(-climate_main,-climate_description) %>% 
+  dplyr::select(-climate_main,-climate_description) %>% 
   datatable(escape = FALSE,
             colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
                          'longitude WGS84'='long_WGS84','climate code'='climate_code',
@@ -89,11 +84,9 @@ T2 <- Tsites %>%
              caption = htmltools::tags$caption(
     style = 'caption-side: bottom; text-align: center;',
     'Table S2: ', htmltools::em('List of the study sites.')))
-T2
+#T2
 
-# if (file_export){
-#   saveWidget(T2,file.path("outputs","Table_sites.html")) #save to a separate html file
-# }
+
 ```
 
 ## Map of the study sites
@@ -169,7 +162,7 @@ The catchments' areas range between `r area_max$size_km2` km^2 (`r area_max$site
 # make the figure with the site sizes
 F2 <- Tsites %>%
   filter(system=="Catchment") %>% 
-  select(site,size_km2) %>% 
+  dplyr::select(site,size_km2) %>% 
   distinct(site,size_km2) %>% 
   mutate(tmp = 1) %>% 
   mutate(randoffset = 0*size_km2+runif(sum(tmp), min = 0, max = 1)) %>% 
@@ -201,7 +194,7 @@ if (file_export){
 
 ### Climates of the study sites
 
-The large majority of the studies were carried out in temperate and continental/cold climates ('C' and 'D' main codes, respectively), mainly without a dry season. Tropical and dry climates ('A' and 'B') are almost absent from the list. This reflects the known bias of hydrologic research for experimental sites located at mid-latitudes in Europe and the United States.
+The large majority of the studies were carried out in temperate and continental/cold climates ('C' and 'D' main codes, respectively), mainly without a dry season. Tropical and dry climates ('A' and 'B') are almost absent from the list. This reflects the known bias of hydrologic research for experimental sites located at mid-latitudes in Europe and the United States. CLimate classification according to [Beck et al. (2018)](https://doi.org/10.1038/sdata.2018.214).
 
 ```{r echo=FALSE,  message=FALSE, warning=FALSE}
   # show the climates
@@ -215,8 +208,8 @@ F3 <- Tdisplay %>%
                        fill = climate_description))+
   geom_bar(color = "white")+
   #coord_flip() +
-  labs(#title = "Sites by Köppen-Geiger climate",
-       #subtitle = "Classification according to Beck et al. (2018)",
+  labs(title = "Sites by Köppen-Geiger climate",
+       subtitle = "Classification according to Beck et al. (2018)",
        #caption = "Figure S3",
        x = "class",
        y = "count",

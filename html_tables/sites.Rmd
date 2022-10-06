@@ -43,7 +43,7 @@ file_export <- FALSE #to export tables, maps and figures
 #pglngth <- 20
 pglngth <- nrow(Tsites)
 T2 <- Tsites %>% 
-  select(-climate_main,-climate_description) %>% 
+  dplyr::select(-climate_main,-climate_description) %>% 
   datatable(escape = FALSE,
             colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
                          'longitude WGS84'='long_WGS84','climate code'='climate_code',
