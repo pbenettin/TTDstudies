@@ -32,9 +32,7 @@ library(htmltools)
   # Tsites
 setwd('..')
 source(file.path("data_import.R"))
-file_export <- FALSE #to export tables, maps and figures
 ```
-
 
 
 
@@ -52,9 +50,4 @@ T1 <- Tdisplay %>%
     style = 'caption-side: bottom; text-align: center;',
     'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
 T1
-
-if (file_export){
-  saveWidget(T1,file.path("outputs","Table_studies.html")) #save to a separate html file
-}
-
 ```

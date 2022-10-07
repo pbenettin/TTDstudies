@@ -32,7 +32,6 @@ library(htmltools)
   # Tsites
 setwd('..')
 source(file.path("data_import.R"))
-file_export <- FALSE #to export tables, maps and figures
 ```
 
 
@@ -44,6 +43,7 @@ file_export <- FALSE #to export tables, maps and figures
 pglngth <- nrow(Tsites)
 T2 <- Tsites %>% 
   dplyr::select(-climate_main,-climate_description) %>% 
+  mutate(size_km2 =num(size_km2, notation = "fit")) %>% 
   datatable(escape = FALSE,
             colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
                          'longitude WGS84'='long_WGS84','climate code'='climate_code',
@@ -56,8 +56,4 @@ T2 <- Tsites %>%
     style = 'caption-side: bottom; text-align: center;',
     'Table S2: ', htmltools::em('List of the study sites.')))
 T2
-
-if (file_export){
-  saveWidget(T2,file.path("outputs","Table_sites.html")) #save to a separate html file
-}
 ```

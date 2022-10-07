@@ -63,7 +63,6 @@ Tdisplay <- T %>%
   mutate(tracer = str_replace_all(tracer,"Na-22",'<sup>22</sup>Na')) %>%
   mutate(tracer = str_replace_all(tracer,"S-35",'<sup>35</sup>S')) %>%
   mutate(tracer = str_replace_all(tracer,"NO3",'NO<sub>3</sub>')) %>% 
-  mutate(size_km2 =num(size_km2, notation = "si")) %>% 
   mutate(study = glue("<a href='{doi}' target='_blank'>{author_year}</a>")) %>%
   mutate(year = str_match(author_year,"\\d{4}")) %>%
   relocate(study, year) %>%
