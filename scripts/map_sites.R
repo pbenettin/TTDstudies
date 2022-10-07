@@ -1,14 +1,5 @@
----
-title: "Map with TTD study sites"
-output: 
-  html_document
----
+# script to generate an html map of the study sites
 
-```{r message=FALSE, warning=FALSE, fig.width=10, include=FALSE}
-
-# LOAD PACKAGES AND PROCESS THE TABLES
-
-# load all packages 
 library(readr)
 library(dplyr)
 library(tidyr)
@@ -32,11 +23,7 @@ library(htmltools)
   # Tsites
 setwd('..')
 source(file.path("data_import.R"))
-file_export <- TRUE #to export tables, maps and figures
-```
 
-
-```{r echo=FALSE,  message=FALSE, warning=FALSE, include = TRUE}
 # make the map
 maphtml <- Tdisplay %>% 
   group_by(site) %>%
@@ -53,10 +40,6 @@ maphtml <- Tdisplay %>%
   addControl("Hover on a pin to see the site name. <br>
              Click on a pin to see the studies", position = "bottomleft")
   
-
-# display the map
-maphtml
-if (file_export){
-  saveWidget(maphtml,"Map.html", title="Map TTD sites") #save to a separate html file
-}
-```
+# export the map
+#saveWidget(maphtml,"map_sites.html", title="Map TTD sites") #save to a separate html file
+#file.rename("Map.html", file.path("..","html_files","Map.html"))

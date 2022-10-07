@@ -110,9 +110,9 @@ maphtml <- Tdisplay %>%
 # display the map
 maphtml
 # if (file_export){
-#   saveWidget(maphtml,"Map.html") #save to a separate html file
+#   saveWidget(maphtml,"Map.html", title="Map TTD sites") #save to a separate html file
 #   file.rename("Map.html", file.path("html_files","Map.html"))
-#}
+# }
 ```
 
 
@@ -141,7 +141,7 @@ F1 <- Tdisplay %>%
 F1
 
 if (file_export){
-  ggsave(file.path("outputs","SI_approaches.pdf")) #save to separate pdf file
+  ggsave(file.path("figures","SI_approaches.pdf")) #save to separate pdf file
 }
 ```
 

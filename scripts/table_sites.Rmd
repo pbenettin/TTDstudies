@@ -36,7 +36,6 @@ source(file.path("data_import.R"))
 
 
 
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 # display as a table using datatable
 #pglngth <- 20
