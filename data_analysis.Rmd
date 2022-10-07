@@ -26,24 +26,24 @@ library(htmlwidgets)
 library(htmltools)
 ```
 
-This document explores the list of scientific papers included in the 'data' folder
+This document explores the list of scientific studies included in the 'data' folder
 
 
-```{r message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, include=FALSE}
 # load all the data 
 # the file "data_import.R" will import 3 tibbles:
   # T with all the data on the studies and their sites
   # Tdisplay, which is the same as T but with html entries that are good for html display
   # Tsites
 source(file.path("data_import.R"))
-file_export <- TRUE #to export tables, maps and figures
+file_export <- TRUE #to export figures
 ```
 
 ## TABLES
 
 ### The studies
 
-The table below lists the considered applications, published between `r min(Tdisplay$year)` and `r max(Tdisplay$year)`.
+The table below lists the considered `r nrow(Tdisplay)` applications, from `r length(unique(Tdisplay$study))` papers published between `r min(Tdisplay$year)` and `r max(Tdisplay$year)`.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 # display as a table using datatable
@@ -58,8 +58,7 @@ T1 <- Tdisplay %>%
             caption = htmltools::tags$caption(
     style = 'caption-side: bottom; text-align: center;',
     'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
-#T1
-
+T1
 ```
 
 
@@ -72,6 +71,7 @@ The table below shows the main characteristics of the `r T %>% distinct(site, sy
 pglngth <- 10
 #pglngth <- nrow(Tsites)
 T2 <- Tsites %>% 
+  mutate(size_km2 =num(size_km2, notation = "fit")) %>% 
   dplyr::select(-climate_main,-climate_description) %>% 
   datatable(escape = FALSE,
             colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
@@ -84,9 +84,7 @@ T2 <- Tsites %>%
              caption = htmltools::tags$caption(
     style = 'caption-side: bottom; text-align: center;',
     'Table S2: ', htmltools::em('List of the study sites.')))
-#T2
-
-
+T2
 ```
 
 ## Map of the study sites
@@ -111,10 +109,10 @@ maphtml <- Tdisplay %>%
 
 # display the map
 maphtml
-if (file_export){
-  saveWidget(maphtml,"Map.html") #save to a separate html file
-  file.rename("Map.html", file.path("outputs","Map.html"))
-}
+# if (file_export){
+#   saveWidget(maphtml,"Map.html") #save to a separate html file
+#   file.rename("Map.html", file.path("html_files","Map.html"))
+#}
 ```
 
 
@@ -156,7 +154,7 @@ area_max <- Tsites %>% filter(system=="Catchment") %>% slice_max(size_km2)
 area_min <- Tsites %>% filter(system=="Catchment") %>% slice_min(size_km2)
 ```
 
-The catchments' areas range between `r area_max$size_km2` km^2 (`r area_max$site`, `r area_max$country`) and `r area_min$size_km2` km^2 (`r area_min$site`, `r area_min$country`). The median catchment size is `r median(Tsites$size_km2,na.rm = TRUE)` km^2.
+The catchments' areas range between `r area_max$size_km2` km^2 (`r area_max$site`, `r area_max$country`) and `r area_min$size_km2` km^2 (`r area_min$site`, `r area_min$country`). The median catchment size is `r median(as.numeric(Tsites$size_km2),na.rm = TRUE)` km^2.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height = 3}
 # make the figure with the site sizes
@@ -187,14 +185,14 @@ F2 <- Tsites %>%
 F2
 
 if (file_export){
-  ggsave(file.path("outputs","SI_sites_size.pdf"),width = 8, height = 3)  #save to separate pdf file
+  ggsave(file.path("figures","SI_sites_size.pdf"),width = 8, height = 3)  #save to separate pdf file
 }
 ```
 
 
 ### Climates of the study sites
 
-The large majority of the studies were carried out in temperate and continental/cold climates ('C' and 'D' main codes, respectively), mainly without a dry season. Tropical and dry climates ('A' and 'B') are almost absent from the list. This reflects the known bias of hydrologic research for experimental sites located at mid-latitudes in Europe and the United States. CLimate classification according to [Beck et al. (2018)](https://doi.org/10.1038/sdata.2018.214).
+The large majority of the studies were carried out in temperate and continental/cold climates ('C' and 'D' main codes, respectively), mainly without a dry season. Tropical and dry climates ('A' and 'B') are almost absent from the list. This reflects the known bias of hydrologic research for experimental sites located at mid-latitudes in Europe and the United States. Climate classification (after [Beck et al., 2018](https://doi.org/10.1038/sdata.2018.214)) is based on one single point and may thus be inaccurate for large catchments.
 
 ```{r echo=FALSE,  message=FALSE, warning=FALSE}
   # show the climates
@@ -218,7 +216,6 @@ F3 <- Tdisplay %>%
 F3
 
 if (file_export){
-  ggsave(file.path("outputs","SI_sites_climate.pdf")) #save to separate pdf file
+  ggsave(file.path("figures","SI_sites_climate.pdf")) #save to separate pdf file
 }
 ```
-

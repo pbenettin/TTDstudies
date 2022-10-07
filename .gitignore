@@ -42,3 +42,6 @@ vignettes/*.pdf
 data/climate_classification_map_Beck_KG_V1_present_0p0083.tif
 data/climate_classification_map_Beck_KG_V1_present_0p083.tif
 data_analysis.html
+Map_creation.html
+Map_files
+data_analysis_files
