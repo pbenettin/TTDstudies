@@ -30,12 +30,19 @@ This document explores the list of scientific studies included in the 'data' fol
 
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-# load all the data 
-# the file "data_import.R" will import 3 tibbles:
-  # T with all the data on the studies and their sites
+# some settings
+data_dir <- file.path("data") #directory where all the data is
+
+# load some functions
+source(file.path("scripts","functions.R"))
+
+# process all the data through script "data_import.R" and import 3 tibbles:
+  # T, with all the data on the studies and their sites (not really needed)
   # Tdisplay, which is the same as T but with html entries that are good for html display
-  # Tsites
-source(file.path("data_import.R"))
+  # Tsites, with all the info on the study sites
+source(file.path("scripts","data_import.R"))
+
+# some settings
 file_export <- TRUE #to export figures
 ```
 
@@ -46,19 +53,10 @@ file_export <- TRUE #to export figures
 The table below lists the considered `r nrow(Tdisplay)` applications, from `r length(unique(Tdisplay$study))` papers published between `r min(Tdisplay$year)` and `r max(Tdisplay$year)`.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
-# display as a table using datatable
-pglngth <- 10
-#pglngth <- nrow(Tdisplay)
-T1 <- Tdisplay %>% 
-  arrange(desc(year)) %>% 
-  dplyr::select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
-  datatable(escape = FALSE, 
-            options = list(pageLength = pglngth),
-            style = "bootstrap",
-            caption = htmltools::tags$caption(
-    style = 'caption-side: bottom; text-align: center;',
-    'Table S1: ', htmltools::em('List of all the considered studies. Papers with multiple applications are listed multiple times.')))
-T1
+# display as an html datatable
+pglngth <- 10 #number of lines to display per page
+table_studies <- generate_table_studies(Tdisplay,pglngth)
+table_studies
 ```
 
 
@@ -67,50 +65,20 @@ T1
 The table below shows the main characteristics of the `r T %>% distinct(site, system) %>% count()` distinct sites where the studies were conducted.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
-# display as a table using datatable
-pglngth <- 10
-#pglngth <- nrow(Tsites)
-T2 <- Tsites %>% 
-  mutate(size_km2 =num(size_km2, notation = "fit")) %>% 
-  dplyr::select(-climate_main,-climate_description) %>% 
-  datatable(escape = FALSE,
-            colnames = c('Size km2'='size_km2','latitude WGS84'='lat_WGS84',
-                         'longitude WGS84'='long_WGS84','climate code'='climate_code',
-                         'n'='n_studies'),
-            options = list(pageLength = 10, 
-                           autoWidth = TRUE,
-                           columnDefs = list(list(width = '200px', targets = c(9)),
-                                             list(width = '20px', targets = c(8)))),
-             caption = htmltools::tags$caption(
-    style = 'caption-side: bottom; text-align: center;',
-    'Table S2: ', htmltools::em('List of the study sites.')))
-T2
+# display as an html datatable
+pglngth <- 10 #number of lines to display per page
+table_sites <- generate_table_sites(Tsites,pglngth)
+table_sites
 ```
 
 ## Map of the study sites
 
 ```{r echo=FALSE,  message=FALSE, warning=FALSE, fig.width=10, include = TRUE}
-# make the map
-maphtml <- Tdisplay %>% 
-  group_by(site) %>%
-  arrange(desc(year)) %>%
-  mutate(studies = str_c(unique(study), collapse = "<br>")) %>% #list of studies per site
-  ungroup() %>%
-  distinct(site, .keep_all = TRUE) %>%
-  leaflet() %>%
-  addTiles() %>%
-  addMarkers(lng=~long_WGS84,
-             lat=~lat_WGS84,
-             label=~site,
-             popup=~studies) %>%
-  addControl("Hover on a pin to see the site name. <br>
-             Click on a pin to see the studies", position = "bottomleft")
-  
-
-# display the map
-maphtml
+# display the html map
+map_sites <- generate_map_sites(Tdisplay)
+map_sites
 # if (file_export){
-#   saveWidget(maphtml,"Map.html", title="Map TTD sites") #save to a separate html file
+#   saveWidget(map_sites,"Map.html", title="Map TTD sites") #save to a separate html file
 #   file.rename("Map.html", file.path("html_files","Map.html"))
 # }
 ```

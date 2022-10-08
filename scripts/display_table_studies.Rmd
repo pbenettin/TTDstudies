@@ -1,0 +1,51 @@
+---
+title: "Table with the TTD studies"
+knit: (function(inputFile, encoding) { 
+      out_dir <- file.path("..","html_files");
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, "table_studies.html")) })
+output: 
+  html_document
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# the working directory needs to be the 'scripts' folder
+
+# load all packages 
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(glue)
+library(tibble)
+library(knitr)
+library(kableExtra)
+library(DT)
+library(ggplot2)
+library(ggmap)
+library(leaflet)
+library(htmlwidgets)
+library(htmltools)
+
+# some settings
+#setwd('..')
+
+# load some functions
+source(file.path("functions.R"))
+
+# process all the data through script "data_import.R" and import 3 tibbles:
+  # T, with all the data on the studies and their sites (not really needed)
+  # Tdisplay, which is the same as T but with html entries that are good for html display
+  # Tsites, with all the info on the study sites
+source(file.path("data_import.R"))
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+# display as an html datatable
+pglngth <- nrow(Tdisplay) #number of lines to display per page
+table_studies <- generate_table_studies(Tdisplay,pglngth)
+table_studies
+```

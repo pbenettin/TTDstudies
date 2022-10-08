@@ -1,5 +1,10 @@
 ---
 title: "TTD studies in real-world catchments from post-2006 methods"
+knit: (function(inputFile, encoding) { 
+      out_dir <- file.path("..");
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'README.md')) })
 output: 
   github_document
 always_allow_html: yes  
@@ -7,7 +12,7 @@ always_allow_html: yes
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 
-# LOAD PACKAGES AND PROCESS THE TABLES
+# the working directory needs to be the 'scripts' folder
 
 # load all packages 
 library(readr)
@@ -20,13 +25,11 @@ library(tibble)
 library(knitr)
 library(kableExtra)
 
-# load all the data 
-# the file "data_import.R" will import 3 tibbles:
-  # T with all the data on the studies and their sites
+# process all the data through script "data_import.R" and import 3 tibbles:
+  # T, with all the data on the studies and their sites (not really needed)
   # Tdisplay, which is the same as T but with html entries that are good for html display
-  # Tsites
+  # Tsites, with all the info on the study sites
 source(file.path("data_import.R"))
-file_export <- TRUE #to export tables, maps and figures
 ```
 
 This repository explores a list of scientific studies on water transit time distributions (TTD) in real-world systems. The list currently includes `r nrow(Tdisplay)` applications to `r T %>% distinct(site) %>% count()` distinct sites, from `r length(unique(Tdisplay$study))` papers published between `r min(Tdisplay$year)` and `r max(Tdisplay$year)`. A study is included if it is based on tracer data and if it makes use of post-2006 approaches to estimate TTDs or TTD metrics.
@@ -55,7 +58,7 @@ Please feel free to suggest additional studies that may have been left out by mi
 ## Table with all the studies
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-# display as a table
+# display as a table with kable (no html tables supported in .md files)
 Tdisplay %>%
   arrange(desc(year)) %>%
   dplyr::select(study, year, site, system, tracer,`TTD approach`,`estimated age metric`) %>% #select just some variables for display
@@ -67,7 +70,7 @@ Tdisplay %>%
 ## Table with the study sites
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-# display as a table
+# display as a table with kable (no html tables supported in .md files)
 Tsites %>%
   dplyr::select(-climate_main,-climate_description, -n_studies) %>%
   kbl(col.names = c('site','system','size km2','country','latitude','longitude','climate','studies'),

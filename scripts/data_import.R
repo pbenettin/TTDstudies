@@ -13,7 +13,9 @@ library(tibble)
 
 
 # define some stuff
-data_dir <- "data" #directory where all the data is
+if(!exists("data_dir")) {
+  data_dir <- file.path("..","data") #directory where all the data is
+}
 
 # load the table with the sites and assign the climate classification
 T <- read_csv(file.path(data_dir,"table_sites.csv"))
@@ -80,5 +82,3 @@ Tsites <- Tdisplay %>%
          climate_main, climate_code, climate_description, n_studies, studies) %>%
   arrange(site)
 
-# detach the raster package to avoid conflicts with dplyr select()
-#detach("package:raster", character.only = TRUE)
