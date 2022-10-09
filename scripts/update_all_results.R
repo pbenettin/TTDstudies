@@ -14,8 +14,10 @@ render('display_table_sites.Rmd', output_file = file.path("..","html_files","tab
 source(file.path("display_map_sites.R"))
 unlink("map_sites_files",recursive = TRUE) #just if this needed to be done again
 
-# knit the readme
-knit('generate_README.Rmd', output = file.path("..","README.md"))
+# render the readme.md
+render("generate_README.Rmd", 
+       output_file = file.path("..","README.md"), 
+       md_document(variant = "markdown_github"))
 
 # execute the data analysis (so figures are re-created)
 knit(file.path("..","data_analysis.Rmd"))
