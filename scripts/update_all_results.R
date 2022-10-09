@@ -1,9 +1,6 @@
-# script to update all main results after new data is included
-# the script runs all main scripts and notebooks
+# this is the script to update all results after new data is included
 
 # the working directory needs to be the 'scripts' folder
-
-#library(readr)
 library(rmarkdown)
 library(tidyr)
 library(knitr)
@@ -25,7 +22,7 @@ knit(file.path("..","data_analysis.Rmd"))
 file.remove("data_analysis.md")
 unlink("figure",recursive = TRUE)
 
-# look like it needs some extra time to be able to delete folders that are being deleted
+# looks like it needs some extra time to be able to delete folders that are being deleted
 Sys.sleep(3)
 unlink("figure",recursive = TRUE)
 unlink("map_sites_files",recursive = TRUE) #just if this needed to be done again

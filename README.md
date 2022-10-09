@@ -1,5 +1,5 @@
 ---
-title: "TTD studies in real-world catchments from post-2006 methods"
+#title: "TTD studies in real-world catchments from post-2006 methods"
 knit: (function(inputFile, encoding) { 
       out_dir <- file.path("..");
       rmarkdown::render(inputFile,
@@ -11,6 +11,9 @@ always_allow_html: yes
 ---
 
 
+
+TTD studies in real-world catchments from post-2006 methods
+================
 
 This repository explores a list of scientific studies on water transit time distributions (TTD) in real-world systems. The list currently includes 84 applications to 54 distinct sites, from 71 papers published between 2007 and 2022. A study is included if it is based on tracer data and if it makes use of post-2006 approaches to estimate TTDs or TTD metrics.
 
