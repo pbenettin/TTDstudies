@@ -1,3 +1,4 @@
+
 # TTD studies in real-world catchments from post-2006 methods
 
 This repository explores a list of scientific studies on water transit
@@ -11,16 +12,16 @@ metrics.
 
 The list can be displayed through:
 
--   A **table with all the studies**
-    ([below](#table-with-all-the-studies) or
-    <a href="https://pbenettin.github.io/TTDstudies/html_files/table_studies.html" target="_blank">interactive</a>)
+- A **table with all the studies** ([below](#table-with-all-the-studies)
+  or
+  <a href="https://pbenettin.github.io/TTDstudies/html_files/table_studies.html" target="_blank">interactive</a>)
 
--   A **table with all the study sites**
-    ([below](#table-with-the-study-sites) or
-    <a href="https://pbenettin.github.io/TTDstudies/html_files/table_sites.html" target="_blank">interactive</a>)
+- A **table with all the study sites**
+  ([below](#table-with-the-study-sites) or
+  <a href="https://pbenettin.github.io/TTDstudies/html_files/table_sites.html" target="_blank">interactive</a>)
 
--   A **map of the sites**
-    (<a href="https://pbenettin.github.io/TTDstudies/html_files/map_sites.html" target="_blank">interactive</a>)
+- A **map of the sites**
+  (<a href="https://pbenettin.github.io/TTDstudies/html_files/map_sites.html" target="_blank">interactive</a>)
 
 Some additional basic analyses can be run through the R Markdown script
 `data_analysis.Rmd`.
@@ -29,7 +30,7 @@ Some additional basic analyses can be run through the R Markdown script
 
 Please feel free to suggest additional studies that may have been left
 out by mistake. You can directly send a table entry formatted as in the
-tables `data/table_papers.csv` and `data/sites_location_classified.csv`.
+tables `data/table_papers.csv` and `data/table_sites.csv`.
 
 ## Table with all the studies
 
