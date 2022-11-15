@@ -6,7 +6,9 @@ time distributions (TTD) in real-world systems. The list currently
 includes 84 applications to 54 distinct sites, from 71 papers published
 between 2007 and 2022. A study is included if it is based on tracer data
 and if it makes use of post-2006 approaches to estimate TTDs or TTD
-metrics.
+metrics. 
+
+The list was originally compiled for the review paper [Transit Time Estimation in Catchments: Recent Developments and Future Directions](https://doi.org/10.1029/2022WR033096), published on Water Resources Research in 2022.
 
 ## Display the data
 
