@@ -1,29 +1,26 @@
-
 # TTD studies in real-world catchments from post-2006 methods
 
 This repository explores a list of scientific studies on water transit
 time distributions (TTD) in real-world systems. The list currently
-includes 84 applications to 54 distinct sites, from 71 papers published
+includes 88 applications to 55 distinct sites, from 74 papers published
 between 2007 and 2022. A study is included if it is based on tracer data
 and if it makes use of post-2006 approaches to estimate TTDs or TTD
-metrics. 
-
-The list was originally compiled for the review paper [Transit Time Estimation in Catchments: Recent Developments and Future Directions](https://doi.org/10.1029/2022WR033096), published on Water Resources Research in 2022.
+metrics.
 
 ## Display the data
 
 The list can be displayed through:
 
-- A **table with all the studies** ([below](#table-with-all-the-studies)
-  or
-  <a href="https://pbenettin.github.io/TTDstudies/html_files/table_studies.html" target="_blank">interactive</a>)
+-   A **table with all the studies**
+    ([below](#table-with-all-the-studies) or
+    <a href="https://pbenettin.github.io/TTDstudies/html_files/table_studies.html" target="_blank">interactive</a>)
 
-- A **table with all the study sites**
-  ([below](#table-with-the-study-sites) or
-  <a href="https://pbenettin.github.io/TTDstudies/html_files/table_sites.html" target="_blank">interactive</a>)
+-   A **table with all the study sites**
+    ([below](#table-with-the-study-sites) or
+    <a href="https://pbenettin.github.io/TTDstudies/html_files/table_sites.html" target="_blank">interactive</a>)
 
-- A **map of the sites**
-  (<a href="https://pbenettin.github.io/TTDstudies/html_files/map_sites.html" target="_blank">interactive</a>)
+-   A **map of the sites**
+    (<a href="https://pbenettin.github.io/TTDstudies/html_files/map_sites.html" target="_blank">interactive</a>)
 
 Some additional basic analyses can be run through the R Markdown script
 `data_analysis.Rmd`.
@@ -85,6 +82,54 @@ multiple approaches
 </td>
 <td style="text-align:left;">
 full distribution, mean age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2021WR031275" target="_blank">Grandi
+and Bertuzzo (2022)</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Plynlimon, Upper Hafren
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+Cl, DOC
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2021WR031275" target="_blank">Grandi
+and Bertuzzo (2022)</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Plynlimon, Hafren
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+Cl, DOC
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution
 </td>
 </tr>
 <tr>
@@ -210,6 +255,30 @@ full distribution, median age
 </tr>
 <tr>
 <td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-2022-222" target="_blank">Borriero
+et al. (2022)</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Selke, Meisdorf
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, median age, young water fraction
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 <a href="https://doi.org/10.1029/2021WR030797" target="_blank">Nguyen et
 al. (2022)</a>
 </td>
@@ -278,6 +347,30 @@ SAS
 </td>
 <td style="text-align:left;">
 full distribution, median age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.14721" target="_blank">Riazi et
+al. (2022)</a>
+</td>
+<td style="text-align:left;">
+2022
+</td>
+<td style="text-align:left;">
+Duck River
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+EC
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution
 </td>
 </tr>
 <tr>
@@ -2595,6 +2688,33 @@ et al. (2022)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
+Duck River
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+3.69e+02
+</td>
+<td style="text-align:left;">
+AU
+</td>
+<td style="text-align:right;">
+-40.86700
+</td>
+<td style="text-align:right;">
+145.117900
+</td>
+<td style="text-align:left;">
+Cfb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.14721" target="_blank">Riazi et
+al. (2022)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Eichstetten
 </td>
 <td style="text-align:left;">
@@ -3310,7 +3430,9 @@ UK
 Cfb
 </td>
 <td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
+<a href="https://doi.org/10.1029/2021WR031275" target="_blank">Grandi
+and Bertuzzo
+(2022)</a><br><a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
 et
 al. (2019)</a><br><a href="https://doi.org/10.1002/2017wr021689" target="_blank">Remondi
 et
@@ -3372,7 +3494,9 @@ UK
 Cfb
 </td>
 <td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
+<a href="https://doi.org/10.1029/2021WR031275" target="_blank">Grandi
+and Bertuzzo
+(2022)</a><br><a href="https://doi.org/10.5194/hess-23-4367-2019" target="_blank">Knapp
 et
 al. (2019)</a><br><a href="https://doi.org/10.1002/2014WR016600" target="_blank">Benettin
 et al. (2015a)</a>
@@ -3510,7 +3634,8 @@ Dfb
 </td>
 <td style="text-align:left;">
 <a href="https://doi.org/10.1029/2021WR030797" target="_blank">Nguyen et
-al. (2022)</a>
+al. (2022)</a><br><a href="https://doi.org/10.5194/hess-2022-222" target="_blank">Borriero
+et al. (2022)</a>
 </td>
 </tr>
 <tr>
