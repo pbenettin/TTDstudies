@@ -1,11 +1,17 @@
+
 # TTD studies in real-world catchments from post-2006 methods
 
-This repository explores a list of scientific studies on water transit
-time distributions (TTD) in real-world systems. The list currently
-includes 88 applications to 55 distinct sites, from 74 papers published
-between 2007 and 2022. A study is included if it is based on tracer data
-and if it makes use of post-2006 approaches to estimate TTDs or TTD
-metrics.
+Explore a list of scientific studies on water transit time distributions
+(TTD) in real-world systems. The list currently includes 88 applications
+to 55 distinct sites, from 74 papers published between 2007 and 2022. A
+study is included if it is based on tracer data and if it makes use of
+post-2006 approaches to estimate TTDs or TTD metrics.
+
+This repository was put together for the review paper: Benettin, P.,
+Rodriguez, N. B., Sprenger, M., Kim, M., Klaus, J., Harman, C. J., et
+al. (2022). Transit time estimation in catchments: Recent developments
+and future directions. Water Resources Research, 58, e2022WR033096.
+<https://doi.org/10.1029/2022WR033096>
 
 ## Display the data
 
