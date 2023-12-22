@@ -93,7 +93,7 @@ As important theoretical and experimental work consolidated between 2010 and 201
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 yrthresh <-  2006
 F1 <- Tdisplay %>%
-  filter(as.numeric(year) > yrthresh & as.numeric(year) < 2022) %>% 
+  filter(as.numeric(year) > yrthresh & as.numeric(year) < max(as.numeric(year))) %>% 
   distinct(study, .keep_all = TRUE) %>%
   arrange(year) %>% 
   ggplot(mapping = aes(x = as.numeric(year),
