@@ -1,9 +1,8 @@
-
 # TTD studies in real-world catchments from post-2006 methods
 
 Explore a list of scientific studies on water transit time distributions
-(TTD) in real-world systems. The list currently includes 88 applications
-to 55 distinct sites, from 74 papers published between 2007 and 2022. A
+(TTD) in real-world systems. The list currently includes 93 applications
+to 59 distinct sites, from 79 papers published between 2007 and 2023. A
 study is included if it is based on tracer data and if it makes use of
 post-2006 approaches to estimate TTDs or TTD metrics.
 
@@ -66,6 +65,150 @@ estimated age metric
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-27-2989-2023" target="_blank">Borriero
+et al. (2023)</a>
+</td>
+<td style="text-align:left;">
+2023
+</td>
+<td style="text-align:left;">
+Selke, Meisdorf
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, median age, young water fraction
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1016/j.jhydrol.2023.130308" target="_blank">Gou
+et al. (2023)</a>
+</td>
+<td style="text-align:left;">
+2023
+</td>
+<td style="text-align:left;">
+Hemuqiao
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, young water fraction
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1016/j.jhydrol.2022.128912" target="_blank">Gou
+et al. (2023b)</a>
+</td>
+<td style="text-align:left;">
+2023
+</td>
+<td style="text-align:left;">
+Hemuqiao
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, young water fraction
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-27-3083-2023" target="_blank">Wang
+et al. (2023)</a>
+</td>
+<td style="text-align:left;">
+2023
+</td>
+<td style="text-align:left;">
+Neckar
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O, <sup>3</sup>H
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2023WR034948" target="_blank">Yu et
+al. (2023)</a>
+</td>
+<td style="text-align:left;">
+2023
+</td>
+<td style="text-align:left;">
+Douglas County Experimental Fields, Tiles A-B-C
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+Cl, NO<sub>3</sub>, <sup>15</sup>N
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+full distribution, median age
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1016/j.jhydrol.2023.129549" target="_blank">Çallı
+et al. (2023)</a>
+</td>
+<td style="text-align:left;">
+2023
+</td>
+<td style="text-align:left;">
+Schneealpe karst
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:left;">
+<sup>18</sup>O
+</td>
+<td style="text-align:left;">
+SAS
+</td>
+<td style="text-align:left;">
+Young water fraction
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 <a href="https://doi.org/10.1029/2021WR030698" target="_blank">Asadollahi
@@ -257,30 +400,6 @@ SAS
 </td>
 <td style="text-align:left;">
 full distribution, median age
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-2022-222" target="_blank">Borriero
-et al. (2022)</a>
-</td>
-<td style="text-align:left;">
-2022
-</td>
-<td style="text-align:left;">
-Selke, Meisdorf
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:left;">
-<sup>18</sup>O
-</td>
-<td style="text-align:left;">
-SAS
-</td>
-<td style="text-align:left;">
-full distribution, median age, young water fraction
 </td>
 </tr>
 <tr>
@@ -789,7 +908,7 @@ median age
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.13925" target="_blank">Corria et
+<a href="https://doi.org/10.1002/hyp.13925" target="_blank">Correa et
 al. (2020)</a>
 </td>
 <td style="text-align:left;">
@@ -2222,7 +2341,7 @@ Aabach–Mönchsaltorf
 Catchment
 </td>
 <td style="text-align:right;">
-4.60e+01
+4.6000e+01
 </td>
 <td style="text-align:left;">
 CH
@@ -2243,40 +2362,13 @@ et al. (2013)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
-Allt a’Mharcaidh
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:right;">
-9.60e+00
-</td>
-<td style="text-align:left;">
-UK
-</td>
-<td style="text-align:right;">
-57.11600
-</td>
-<td style="text-align:right;">
--3.848000
-</td>
-<td style="text-align:left;">
-Cfb
-</td>
-<td style="text-align:left;">
-<a href="https://doi.org/10.5194/hess-17-533-2013" target="_blank">Hrachowitz
-et al. (2013)</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 Allt Coire nan Con
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-8.00e+00
+8.0000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -2297,13 +2389,40 @@ et al. (2013)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
+Allt a’Mharcaidh
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+9.6000e+00
+</td>
+<td style="text-align:left;">
+UK
+</td>
+<td style="text-align:right;">
+57.11600
+</td>
+<td style="text-align:right;">
+-3.848000
+</td>
+<td style="text-align:left;">
+Cfb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.5194/hess-17-533-2013" target="_blank">Hrachowitz
+et al. (2013)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Alteckendorf
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-4.70e-01
+4.7000e-01
 </td>
 <td style="text-align:left;">
 FR
@@ -2357,7 +2476,7 @@ Baldardo Burn
 Catchment
 </td>
 <td style="text-align:right;">
-2.00e+00
+2.0000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -2384,7 +2503,7 @@ Bogus Creek
 Catchment
 </td>
 <td style="text-align:right;">
-6.00e-01
+6.0000e-01
 </td>
 <td style="text-align:left;">
 US
@@ -2411,7 +2530,7 @@ Bruntland Burn
 Catchment
 </td>
 <td style="text-align:right;">
-3.20e+00
+3.2000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -2480,7 +2599,7 @@ Burn of Bennie
 Catchment
 </td>
 <td style="text-align:right;">
-7.90e+00
+7.9000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -2507,7 +2626,7 @@ Can Vila
 Catchment
 </td>
 <td style="text-align:right;">
-5.60e-01
+5.6000e-01
 </td>
 <td style="text-align:left;">
 ES
@@ -2534,7 +2653,7 @@ Caño Seco
 Catchment
 </td>
 <td style="text-align:right;">
-3.00e+01
+3.0000e+01
 </td>
 <td style="text-align:left;">
 CR
@@ -2561,7 +2680,7 @@ Chenqi
 Catchment
 </td>
 <td style="text-align:right;">
-1.25e+00
+1.2500e+00
 </td>
 <td style="text-align:left;">
 CN
@@ -2592,7 +2711,7 @@ Corin
 Catchment
 </td>
 <td style="text-align:right;">
-1.47e+02
+1.4700e+02
 </td>
 <td style="text-align:left;">
 AU
@@ -2619,7 +2738,7 @@ Demnitzer Millcreek
 Catchment
 </td>
 <td style="text-align:right;">
-6.60e+01
+6.6000e+01
 </td>
 <td style="text-align:left;">
 DE
@@ -2667,13 +2786,40 @@ al. (2020b)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
+Douglas County Experimental Fields, Tiles A-B-C
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+1.8000e-02
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+39.71667
+</td>
+<td style="text-align:right;">
+-88.233333
+</td>
+<td style="text-align:left;">
+Dfa
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2023WR034948" target="_blank">Yu et
+al. (2023)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Dry Creek
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-3.50e+00
+3.5000e+00
 </td>
 <td style="text-align:left;">
 US
@@ -2700,7 +2846,7 @@ Duck River
 Catchment
 </td>
 <td style="text-align:right;">
-3.69e+02
+3.6900e+02
 </td>
 <td style="text-align:left;">
 AU
@@ -2717,6 +2863,39 @@ Cfb
 <td style="text-align:left;">
 <a href="https://doi.org/10.1002/hyp.14721" target="_blank">Riazi et
 al. (2022)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+EPFL campus
+</td>
+<td style="text-align:left;">
+Soil column
+</td>
+<td style="text-align:right;">
+1.0000e-06
+</td>
+<td style="text-align:left;">
+CH
+</td>
+<td style="text-align:right;">
+46.52139
+</td>
+<td style="text-align:right;">
+6.567382
+</td>
+<td style="text-align:left;">
+Cfb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2021WR030698" target="_blank">Asadollahi
+et
+al. (2022)</a><br><a href="https://doi.org/10.1029/2019WR025539" target="_blank">Asadollahi
+et
+al. (2020)</a><br><a href="https://doi.org/10.1002/hyp.13770" target="_blank">Rodriguez
+et
+al. (2020)</a><br><a href="https://doi.org/10.1002/2014WR016508" target="_blank">Queloz
+et al. (2015)</a>
 </td>
 </tr>
 <tr>
@@ -2748,75 +2927,13 @@ et al. (2015)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
-EPFL campus
-</td>
-<td style="text-align:left;">
-Soil column
-</td>
-<td style="text-align:right;">
-1.00e-06
-</td>
-<td style="text-align:left;">
-CH
-</td>
-<td style="text-align:right;">
-46.52139
-</td>
-<td style="text-align:right;">
-6.567382
-</td>
-<td style="text-align:left;">
-Cfb
-</td>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1029/2021WR030698" target="_blank">Asadollahi
-et
-al. (2022)</a><br><a href="https://doi.org/10.1029/2019WR025539" target="_blank">Asadollahi
-et
-al. (2020)</a><br><a href="https://doi.org/10.1002/hyp.13770" target="_blank">Rodriguez
-et
-al. (2020)</a><br><a href="https://doi.org/10.1002/2014WR016508" target="_blank">Queloz
-et al. (2015)</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Gårdsjön G1
-</td>
-<td style="text-align:left;">
-Catchment
-</td>
-<td style="text-align:right;">
-6.30e-03
-</td>
-<td style="text-align:left;">
-SE
-</td>
-<td style="text-align:right;">
-58.05300
-</td>
-<td style="text-align:right;">
-12.016000
-</td>
-<td style="text-align:left;">
-Dfb
-</td>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
-Velde et
-al. (2015)</a><br><a href="https://doi.org/10.1002/wrcr.20377" target="_blank">Davies
-et al. (2013)</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 Girnock Burn
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-3.00e+01
+3.0000e+01
 </td>
 <td style="text-align:left;">
 UK
@@ -2843,7 +2960,7 @@ Granger Basin
 Catchment
 </td>
 <td style="text-align:right;">
-7.80e+00
+7.8000e+00
 </td>
 <td style="text-align:left;">
 CA
@@ -2860,6 +2977,92 @@ ET
 <td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-23-2507-2019" target="_blank">Piovano
 et al. (2019)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gårdsjön G1
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+6.3000e-03
+</td>
+<td style="text-align:left;">
+SE
+</td>
+<td style="text-align:right;">
+58.05300
+</td>
+<td style="text-align:right;">
+12.016000
+</td>
+<td style="text-align:left;">
+Dfb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.10372" target="_blank">van der
+Velde et
+al. (2015)</a><br><a href="https://doi.org/10.1002/wrcr.20377" target="_blank">Davies
+et al. (2013)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HJ Andrews WS 10
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+9.6000e-01
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+44.21690
+</td>
+<td style="text-align:right;">
+-122.261000
+</td>
+<td style="text-align:left;">
+Csb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1002/hyp.13518" target="_blank">Cain et
+al. (2019)</a><br><a href="https://doi.org/10.1029/2017wr021964" target="_blank">Rodriguez
+et
+al. (2018)</a><br><a href="https://doi.org/10.1002/2014WR016247" target="_blank">Klaus
+et al. (2015)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HJ Andrews WS 10
+</td>
+<td style="text-align:left;">
+Hillslope
+</td>
+<td style="text-align:right;">
+1.7000e-03
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+44.21690
+</td>
+<td style="text-align:right;">
+-122.261000
+</td>
+<td style="text-align:left;">
+Csb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1016/j.advwatres.2006.07.004" target="_blank">McGuire
+et al. (2007)</a>
 </td>
 </tr>
 <tr>
@@ -2891,59 +3094,31 @@ et al. (2015)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
-HJ Andrews WS 10
+Hemuqiao
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-9.60e-01
+1.3500e+00
 </td>
 <td style="text-align:left;">
-US
+CN
 </td>
 <td style="text-align:right;">
-44.21690
+30.45114
 </td>
 <td style="text-align:right;">
--122.261000
+119.462564
 </td>
 <td style="text-align:left;">
-Csb
+Cfa
 </td>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.13518" target="_blank">Cain et
-al. (2019)</a><br><a href="https://doi.org/10.1029/2017wr021964" target="_blank">Rodriguez
+<a href="https://doi.org/10.1016/j.jhydrol.2023.130308" target="_blank">Gou
 et
-al. (2018)</a><br><a href="https://doi.org/10.1002/2014WR016247" target="_blank">Klaus
-et al. (2015)</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-HJ Andrews WS 10
-</td>
-<td style="text-align:left;">
-Hillslope
-</td>
-<td style="text-align:right;">
-1.70e-03
-</td>
-<td style="text-align:left;">
-US
-</td>
-<td style="text-align:right;">
-44.21690
-</td>
-<td style="text-align:right;">
--122.261000
-</td>
-<td style="text-align:left;">
-Csb
-</td>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1016/j.advwatres.2006.07.004" target="_blank">McGuire
-et al. (2007)</a>
+al. (2023)</a><br><a href="https://doi.org/10.1016/j.jhydrol.2022.128912" target="_blank">Gou
+et al. (2023b)</a>
 </td>
 </tr>
 <tr>
@@ -2954,7 +3129,7 @@ Howard River
 Catchment
 </td>
 <td style="text-align:right;">
-1.26e+02
+1.2600e+02
 </td>
 <td style="text-align:left;">
 AU
@@ -2981,7 +3156,7 @@ Hubbard Brook
 Catchment
 </td>
 <td style="text-align:right;">
-4.20e-01
+4.2000e-01
 </td>
 <td style="text-align:left;">
 US
@@ -3008,7 +3183,7 @@ Hupsel Brook
 Catchment
 </td>
 <td style="text-align:right;">
-6.50e+00
+6.5000e+00
 </td>
 <td style="text-align:left;">
 NL
@@ -3063,7 +3238,7 @@ Kerbernez
 Catchment
 </td>
 <td style="text-align:right;">
-1.20e-01
+1.2000e-01
 </td>
 <td style="text-align:left;">
 FR
@@ -3090,7 +3265,7 @@ Kerrien
 Catchment
 </td>
 <td style="text-align:right;">
-1.10e-01
+1.1000e-01
 </td>
 <td style="text-align:left;">
 FR
@@ -3117,7 +3292,7 @@ Kervidy-Naizin
 Catchment
 </td>
 <td style="text-align:right;">
-5.00e+00
+5.0000e+00
 </td>
 <td style="text-align:left;">
 FR
@@ -3144,7 +3319,7 @@ Krycklan
 Catchment
 </td>
 <td style="text-align:right;">
-5.00e-01
+5.0000e-01
 </td>
 <td style="text-align:left;">
 SE
@@ -3167,29 +3342,30 @@ et al. (2017)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
-Lägeren
+LEO hillslopes (East, West), Landscape Evolution Observatory, Biosphere
+2
 </td>
 <td style="text-align:left;">
-Soil profile
+Hillslope
 </td>
 <td style="text-align:right;">
+3.3000e-04
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+32.57884
+</td>
+<td style="text-align:right;">
+-110.851150
+</td>
+<td style="text-align:left;">
 NA
 </td>
 <td style="text-align:left;">
-CH
-</td>
-<td style="text-align:right;">
-47.47833
-</td>
-<td style="text-align:right;">
-8.364390
-</td>
-<td style="text-align:left;">
-Dfb
-</td>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1111/nph.15255" target="_blank">Brinkmann et
-al. (2018)</a>
+<a href="https://doi.org/10.1029/2020WR028959" target="_blank">Kim et
+al. (2022)</a>
 </td>
 </tr>
 <tr>
@@ -3221,41 +3397,13 @@ al. (2019)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
-LEO hillslopes (East, West), Landscape Evolution Observatory, Biosphere
-2
-</td>
-<td style="text-align:left;">
-Hillslope
-</td>
-<td style="text-align:right;">
-3.30e-04
-</td>
-<td style="text-align:left;">
-US
-</td>
-<td style="text-align:right;">
-32.57884
-</td>
-<td style="text-align:right;">
--110.851150
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-<a href="https://doi.org/10.1029/2020WR028959" target="_blank">Kim et
-al. (2022)</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 Loch Ard Burn 10
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-9.00e-01
+9.0000e-01
 </td>
 <td style="text-align:left;">
 UK
@@ -3282,7 +3430,7 @@ Loch Ard Burn 11
 Catchment
 </td>
 <td style="text-align:right;">
-1.40e+00
+1.4000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -3303,13 +3451,40 @@ et al. (2013)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
+Lägeren
+</td>
+<td style="text-align:left;">
+Soil profile
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+CH
+</td>
+<td style="text-align:right;">
+47.47833
+</td>
+<td style="text-align:right;">
+8.364390
+</td>
+<td style="text-align:left;">
+Dfb
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1111/nph.15255" target="_blank">Brinkmann et
+al. (2018)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Marshall Gulch
 </td>
 <td style="text-align:left;">
 Catchment
 </td>
 <td style="text-align:right;">
-1.53e+00
+1.5300e+00
 </td>
 <td style="text-align:left;">
 US
@@ -3330,33 +3505,29 @@ Velde et al. (2015)</a>
 </tr>
 <tr>
 <td style="text-align:left;">
-miniLEO, Landscape Evolution Observatory, Biosphere 2
+Neckar
 </td>
 <td style="text-align:left;">
-Mini Hillslope
+Catchment
 </td>
 <td style="text-align:right;">
-1.00e-06
+1.3041e+04
 </td>
 <td style="text-align:left;">
-US
+DE
 </td>
 <td style="text-align:right;">
-32.57884
+49.44788
 </td>
 <td style="text-align:right;">
--110.851150
+9.005956
 </td>
 <td style="text-align:left;">
-NA
+Dfb
 </td>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1029/2021WR030950" target="_blank">Meira
-Neto et
-al. (2022)</a><br><a href="https://doi.org/10.1002/2016WR019901" target="_blank">Pangle
-et
-al. (2017)</a><br><a href="https://doi.org/10.1002/2016WR018620" target="_blank">Kim
-et al. (2016)</a>
+<a href="https://doi.org/10.5194/hess-27-3083-2023" target="_blank">Wang
+et al. (2023)</a>
 </td>
 </tr>
 <tr>
@@ -3367,7 +3538,7 @@ Neuherberg
 Soil column
 </td>
 <td style="text-align:right;">
-1.00e-06
+1.0000e-06
 </td>
 <td style="text-align:left;">
 DE
@@ -3394,7 +3565,7 @@ Plastic-1
 Catchment
 </td>
 <td style="text-align:right;">
-2.30e-01
+2.3000e-01
 </td>
 <td style="text-align:left;">
 CA
@@ -3421,7 +3592,7 @@ Plynlimon, Hafren
 Catchment
 </td>
 <td style="text-align:right;">
-3.50e+00
+3.5000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -3456,7 +3627,7 @@ Plynlimon, Tanllwyth
 Catchment
 </td>
 <td style="text-align:right;">
-9.00e-01
+9.0000e-01
 </td>
 <td style="text-align:left;">
 UK
@@ -3485,7 +3656,7 @@ Plynlimon, Upper Hafren
 Catchment
 </td>
 <td style="text-align:right;">
-1.20e+00
+1.2000e+00
 </td>
 <td style="text-align:left;">
 UK
@@ -3516,7 +3687,7 @@ Quebrada Grande
 Catchment
 </td>
 <td style="text-align:right;">
-3.90e+00
+3.9000e+00
 </td>
 <td style="text-align:left;">
 CR
@@ -3543,7 +3714,7 @@ San Lorencito river
 Catchment
 </td>
 <td style="text-align:right;">
-3.20e+00
+3.2000e+00
 </td>
 <td style="text-align:left;">
 CR
@@ -3558,8 +3729,35 @@ CR
 Am
 </td>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1002/hyp.13925" target="_blank">Corria et
+<a href="https://doi.org/10.1002/hyp.13925" target="_blank">Correa et
 al. (2020)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Schneealpe karst
+</td>
+<td style="text-align:left;">
+Catchment
+</td>
+<td style="text-align:right;">
+2.3000e+01
+</td>
+<td style="text-align:left;">
+AT
+</td>
+<td style="text-align:right;">
+47.70574
+</td>
+<td style="text-align:right;">
+15.592736
+</td>
+<td style="text-align:left;">
+Dfc
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1016/j.jhydrol.2023.129549" target="_blank">Çallı
+et al. (2023)</a>
 </td>
 </tr>
 <tr>
@@ -3570,7 +3768,7 @@ Schäfertal
 Catchment
 </td>
 <td style="text-align:right;">
-1.44e+00
+1.4400e+00
 </td>
 <td style="text-align:left;">
 DE
@@ -3597,7 +3795,7 @@ Selke, Hausneindorf
 Catchment
 </td>
 <td style="text-align:right;">
-4.57e+02
+4.5700e+02
 </td>
 <td style="text-align:left;">
 DE
@@ -3624,7 +3822,7 @@ Selke, Meisdorf
 Catchment
 </td>
 <td style="text-align:right;">
-1.79e+02
+1.7900e+02
 </td>
 <td style="text-align:left;">
 DE
@@ -3639,8 +3837,9 @@ DE
 Dfb
 </td>
 <td style="text-align:left;">
-<a href="https://doi.org/10.1029/2021WR030797" target="_blank">Nguyen et
-al. (2022)</a><br><a href="https://doi.org/10.5194/hess-2022-222" target="_blank">Borriero
+<a href="https://doi.org/10.5194/hess-27-2989-2023" target="_blank">Borriero
+et
+al. (2023)</a><br><a href="https://doi.org/10.1029/2021WR030797" target="_blank">Nguyen
 et al. (2022)</a>
 </td>
 </tr>
@@ -3652,7 +3851,7 @@ Selke, Silberhütte
 Catchment
 </td>
 <td style="text-align:right;">
-1.00e+02
+1.0000e+02
 </td>
 <td style="text-align:left;">
 DE
@@ -3680,7 +3879,7 @@ Southern Sierra Critical Zone Observatory, P301
 Catchment
 </td>
 <td style="text-align:right;">
-1.00e+00
+1.0000e+00
 </td>
 <td style="text-align:left;">
 US
@@ -3707,7 +3906,7 @@ Springendalse Beek
 Catchment
 </td>
 <td style="text-align:right;">
-4.00e+00
+4.0000e+00
 </td>
 <td style="text-align:left;">
 NL
@@ -3734,7 +3933,7 @@ Steglitz Urban Ecohydrological Observatory
 Catchment
 </td>
 <td style="text-align:right;">
-7.80e-03
+7.8000e-03
 </td>
 <td style="text-align:left;">
 DE
@@ -3761,7 +3960,7 @@ Svartberget
 Catchment
 </td>
 <td style="text-align:right;">
-4.90e-01
+4.9000e-01
 </td>
 <td style="text-align:left;">
 SW
@@ -3788,7 +3987,7 @@ Weierbach
 Catchment
 </td>
 <td style="text-align:right;">
-4.20e-01
+4.2000e-01
 </td>
 <td style="text-align:left;">
 LU
@@ -3817,7 +4016,7 @@ Wuestebach
 Catchment
 </td>
 <td style="text-align:right;">
-3.90e-01
+3.9000e-01
 </td>
 <td style="text-align:left;">
 DE
@@ -3834,6 +4033,37 @@ Dfb
 <td style="text-align:left;">
 <a href="https://doi.org/10.5194/hess-25-4887-2021" target="_blank">Hrachowitz
 et al. (2021)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+miniLEO, Landscape Evolution Observatory, Biosphere 2
+</td>
+<td style="text-align:left;">
+Mini Hillslope
+</td>
+<td style="text-align:right;">
+1.0000e-06
+</td>
+<td style="text-align:left;">
+US
+</td>
+<td style="text-align:right;">
+32.57884
+</td>
+<td style="text-align:right;">
+-110.851150
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+<a href="https://doi.org/10.1029/2021WR030950" target="_blank">Meira
+Neto et
+al. (2022)</a><br><a href="https://doi.org/10.1002/2016WR019901" target="_blank">Pangle
+et
+al. (2017)</a><br><a href="https://doi.org/10.1002/2016WR018620" target="_blank">Kim
+et al. (2016)</a>
 </td>
 </tr>
 </tbody>

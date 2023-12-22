@@ -14,7 +14,7 @@ Birkel and Soulsby (2016),10.1002/hyp.10941,Caño Seco,Catchment,virtual flux tr
 Birkel et al. (2015),10.1002/hyp.10414,Girnock Burn,Catchment,virtual flux tracking,,NA,O-18,weekly,stream (weekly),streamflow,mean age,24
 Birkel et al. (2020),10.1029/2019WR026175,Howard River,Catchment,well/partially-mixed compartments,,SAVTAM,"H-2, DOC",daily,stream (weekly to monthly),streamflow,median age,24
 Cain et al. (2019),10.1002/hyp.13518,HJ Andrews WS 10,Catchment,well/partially-mixed compartments,4 compartments,NA,Cl,weekly,stream (irregular),streamflow (multiple signatures),"full distribution, mean age",24
-Corria et al. (2020),10.1002/hyp.13925,San Lorencito river,Catchment,virtual flux tracking,,STARRtropics,H-2,fortnightly to monthly,stream (event based to weekly),streamflow,mean age,1
+Correa et al. (2020),10.1002/hyp.13925,San Lorencito river,Catchment,virtual flux tracking,,STARRtropics,H-2,fortnightly to monthly,stream (event based to weekly),streamflow,mean age,1
 Davies et al. (2013),10.1002/wrcr.20377,Gårdsjön G1,Catchment,particle tracking,,MIPs,O-18,daily and fortnightly,stream (event based to weekly),streamflow,full distribution,24
 Douinot et al. (2019),10.1002/hyp.13480,Lake Stechlin,Soil profile,virtual flux tracking,,EcH2O-iso,Cl,biweekly,Soil water (biweekly),"soil moisture, sap flux",mean age,24
 Gillefalk et al. (2021),10.5194/hess-25-3635-2021,Steglitz Urban Ecohydrological Observatory,Catchment,virtual flux tracking,,EcH2O-iso,"O-18, H-2",monthly to daily,Soil water (monthly),soil moisture,mean age,24
@@ -84,6 +84,11 @@ Lapides et al. (2022),10.1029/2021WR031665,Dry Creek,Catchment,SAS,,tran-SAS,H-2
 Asadollahi et al. (2022),10.1029/2021WR030698,EPFL campus,Soil column,multiple approaches,SAS and virtual flux tracking on distributed process-based model,"tran-SAS, HYDRUS-1D","O-18, H-2",variable (all events),"leakage (subdaily), xylem (subweekly)","soil moisture, soil tension, soil leakage","full distribution, mean age",24
 Sprenger et al. (2022),10.5194/hess-26-4093-2022,Can Vila,Catchment,SAS,1 compartment,tran-SAS,O-18,weekly and every 5 mm,"stream (variable from weekly to subhourly), xylem (biweekly)",NA,"full distribution, median age",1
 Riazi et al. (2022),10.1002/hyp.14721,Duck River,Catchment,SAS,1 compartment,tran-SAS,EC,"(no sampling, calibrated constant input)",stream (hourly),NA,full distribution,1
-Borriero et al. (2022),10.5194/hess-2022-222,"Selke, Meisdorf",Catchment,SAS,1 compartment,tran-SAS,O-18,monthly,streamflow (monthly),NA,"full distribution, median age, young water fraction",24
+Borriero et al. (2023),10.5194/hess-27-2989-2023,"Selke, Meisdorf",Catchment,SAS,1 compartment,tran-SAS,O-18,monthly,streamflow (monthly),NA,"full distribution, median age, young water fraction",24
 Grandi and Bertuzzo (2022),10.1029/2021WR031275,"Plynlimon, Upper Hafren",Catchment,SAS,1 compartment,NA,"Cl, DOC",weekly and subdaily,streamflow (weekly and subdaily),NA,full distribution,6
 Grandi and Bertuzzo (2022),10.1029/2021WR031275,"Plynlimon, Hafren",Catchment,SAS,1 compartment,NA,"Cl, DOC",weekly and subdaily,streamflow (weekly and subdaily),NA,full distribution,6
+Gou et al. (2023),10.1016/j.jhydrol.2023.130308,Hemuqiao,Catchment,SAS,2 compartments,NA,O-18,daily,stream (daily),streamflow,"full distribution, young water fraction",24
+Wang et al. (2023),10.5194/hess-27-3083-2023,Neckar,Catchment,SAS,,NA,"O-18, H-3",monthly,stream (monthly),streamflow,full distribution,24
+Gou et al. (2023b),10.1016/j.jhydrol.2022.128912,Hemuqiao,Catchment,SAS,1 compartment,NA,O-18,daily,stream (daily),NA,"full distribution, young water fraction",24
+Yu et al. (2023),10.1029/2023WR034948,"Douglas County Experimental Fields, Tiles A-B-C",Catchment,SAS,1 compartment,tran-SAS,"Cl, NO3, N-15","(no sampling, tracer input is from fertilizer)",tile drain (weekly),NA,"full distribution, median age",24
+Çallı et al. (2023),10.1016/j.jhydrol.2023.129549,Schneealpe karst,Catchment,SAS,1 compartment,tran-SAS,O-18,monthly,spring (monthly),NA,Young water fraction,
